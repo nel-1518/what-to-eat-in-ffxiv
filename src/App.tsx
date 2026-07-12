@@ -28,6 +28,9 @@ function App() {
   const [exporting, setExporting] = useState(false)
   const [tipGroups, setTipGroups] = useState<ProgressTipGroup[]>([])
 
+  // 用来强制重新挂载 ProgressView，使进度条重新开始
+  const [generationKey, setGenerationKey] = useState(0)
+
   // 喝什么状态
   const [drinkState, setDrinkState] = useState<'initial' | 'spinning' | 'result'>('initial')
   const [selectedDrink, setSelectedDrink] = useState<RecipeItem | null>(null)
@@ -48,6 +51,7 @@ function App() {
   const handleGenerate = useCallback(() => {
     setPageState('generating')
     setMealPlan(null)
+    setGenerationKey((k) => k + 1)
     pendingPlanRef.current = null
 
     // 立即开始异步生成
@@ -77,16 +81,16 @@ function App() {
     }
   }, [])
 
-  // 进度失败回调
-  const handleProgressFail = useCallback(() => {
+  // 用户点击「观看广告」→ 弹出广告
+  const handleAdWatch = useCallback(() => {
     setShowAd(true)
   }, [])
 
-  // 广告关闭后回到初始页
+  // 广告关闭后重新开始生成进度
   const handleAdClose = useCallback(() => {
     setShowAd(false)
-    setPageState('initial')
-  }, [])
+    handleGenerate()
+  }, [handleGenerate])
 
   // 重新生成
   const handleRegenerate = useCallback(() => {
@@ -236,10 +240,11 @@ function App() {
           <div className={`page-transition ${pageState === 'generating' ? 'page-enter' : 'page-exit'}`}>
             {pageState === 'generating' && (
               <ProgressView
+                key={generationKey}
                 visible
                 tipGroups={tipGroups}
                 onComplete={handleProgressComplete}
-                onFail={handleProgressFail}
+                onAdWatch={handleAdWatch}
               />
             )}
           </div>

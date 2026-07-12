@@ -13,8 +13,8 @@ interface ProgressViewProps {
   tipGroups: ProgressTipGroup[]
   /** 进度完成回调（成功时） */
   onComplete: () => void
-  /** 生成失败回调 */
-  onFail: () => void
+  /** 用户点击「观看广告」时的回调 */
+  onAdWatch?: () => void
 }
 
 /**
@@ -25,7 +25,7 @@ function ProgressView({
   visible,
   tipGroups,
   onComplete,
-  onFail,
+  onAdWatch,
 }: ProgressViewProps) {
   const [percent, setPercent] = useState(0)
   const [currentTips, setCurrentTips] = useState<string[]>([])
@@ -96,7 +96,6 @@ function ProgressView({
         if (Math.random() < FAILURE_RATE) {
           setFailed(true)
           setShowAdButton(true)
-          onFail()
         } else {
           onComplete()
         }
@@ -106,18 +105,16 @@ function ProgressView({
     return () => {
       clearInterval(progressTimer)
     }
-  }, [visible, failed, currentTips, onComplete, onFail])
+  }, [visible, failed, currentTips, onComplete, onAdWatch])
 
   // 根据进度显示对应提示（不循环）
   const displayTip = currentTips.length > 0
     ? currentTips[Math.min(currentTipIndex, currentTips.length - 1)]
     : '正在准备中...'
 
-  // 观看广告后重新生成
+  // 点击「观看广告」→ 触发父组件弹出广告弹窗
   const handleWatchAd = () => {
-    setShowAdButton(false)
-    setFailed(false)
-    reset()
+    onAdWatch?.()
   }
 
   if (!visible) return null
@@ -127,7 +124,7 @@ function ProgressView({
       <div className="progress-view-content">
         {/* 标题 */}
         <Text strong style={{ fontSize: 22, color: failed ? 'var(--color-error)' : 'var(--color-accent)' }}>
-          {failed ? '⚠️ 生成失败' : '🍽️ 正在为你搭配今日美食'}
+          {failed ? '⚠️ 错误' : '🍽️ 正在为你搭配今日美食'}
         </Text>
 
         {/* 进度条 */}
@@ -159,7 +156,7 @@ function ProgressView({
           <div style={{ marginTop: 16, textAlign: 'center' }}>
             <WarningOutlined style={{ fontSize: 48, color: 'var(--color-error)', display: 'block', marginBottom: 12 }} />
             <Text style={{ color: 'var(--color-error)', fontSize: 15 }}>
-              以太波动导致菜谱生成失败！
+              以太剧烈波动，菜谱生成失败！
             </Text>
             {showAdButton && (
               <div style={{ marginTop: 24 }}>

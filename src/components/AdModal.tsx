@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Modal, Typography } from 'antd'
 
 const { Text } = Typography
@@ -15,26 +14,16 @@ interface AdModalProps {
  * 多个关闭按钮，只有最隐蔽的才能关闭
  */
 function AdModal({ visible, onRealClose }: AdModalProps) {
-  const [clickedFake, setClickedFake] = useState<string[]>([])
-
-  const handleFakeClick = (id: string) => {
-    setClickedFake((prev) => [...prev, id])
-  }
-
   // 重置状态
-  const handleRealClose = () => {
-    setClickedFake([])
+  const handleRealClose = (e: React.MouseEvent) => {
+    e.stopPropagation()
     onRealClose()
   }
 
-  // 假关闭按钮文案
-  const fakeButtons = [
-    { id: 'close1', label: '✕ 关闭', x: '85%', y: '8%' },
-    { id: 'close2', label: '点击领取', x: '10%', y: '15%' },
-    { id: 'close3', label: '我知道了', x: '70%', y: '75%' },
-    { id: 'close4', label: '跳过广告 >', x: '50%', y: '85%', style: { color: '#666' } },
-    { id: 'close5', label: '立即关闭', x: '15%', y: '70%' },
-  ]
+  // 点击弹窗任意位置打开广告页（左上角关闭按钮已阻止冒泡）
+  const handleBodyClick = () => {
+    window.open('https://actff1.web.sdo.com/project/20260425evercold/', '_blank')
+  }
 
   return (
     <Modal
@@ -49,6 +38,8 @@ function AdModal({ visible, onRealClose }: AdModalProps) {
         body: {
           padding: 0,
           overflow: 'hidden',
+          userSelect: 'none',
+          cursor: 'pointer',
           background: 'linear-gradient(135deg, #ff0000 0%, #ff6600 25%, #ffcc00 50%, #ff0066 75%, #9900ff 100%)',
           border: '4px solid #ffd700',
           boxShadow: '0 0 40px rgba(255, 215, 0, 0.6), inset 0 0 60px rgba(255, 255, 255, 0.1)',
@@ -57,6 +48,8 @@ function AdModal({ visible, onRealClose }: AdModalProps) {
         },
       }}
     >
+      {/* 整个弹窗点击打开广告页 */}
+      <div onClick={handleBodyClick}>
       {/* 顶部闪烁大字 */}
       <div style={{
         textAlign: 'center',
@@ -72,7 +65,7 @@ function AdModal({ visible, onRealClose }: AdModalProps) {
             left: 4,
             width: 16,
             height: 16,
-            opacity: 0.15,
+            opacity: 0.6,
             cursor: 'pointer',
             background: 'transparent',
             zIndex: 10,
@@ -80,10 +73,28 @@ function AdModal({ visible, onRealClose }: AdModalProps) {
             alignItems: 'center',
             justifyContent: 'center',
             fontSize: 10,
+            color: '#fff',
           }}
-          title="关掉"
+          title=""
         >
           ✕
+        </div>
+
+        {/* 右上角虚假关闭按钮 - 点击无任何效果 */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 8,
+            right: 8,
+            cursor: 'pointer',
+            padding: '4px 8px',
+            background: 'rgba(255,255,255,0.2)',
+            borderRadius: 4,
+            color: '#fff',
+            fontSize: 13,
+          }}
+        >
+          ✕ 关闭
         </div>
 
         <Text style={{
@@ -94,7 +105,7 @@ function AdModal({ visible, onRealClose }: AdModalProps) {
           display: 'block',
           animation: 'adTextPulse 0.8s infinite',
         }}>
-          🔥 一 刀 9 9 9 🔥
+          🔥 零 元 畅 玩 🔥
         </Text>
         <Text style={{
           fontSize: 18,
@@ -103,46 +114,27 @@ function AdModal({ visible, onRealClose }: AdModalProps) {
           marginTop: 8,
           textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
         }}>
-          装备回收 · 交易自由 · 提现到手
+          装备强化 · 交易自由 · 团队PK
         </Text>
       </div>
-
-      {/* 虚假关闭按钮 - 散布各处 */}
-      {fakeButtons.map((btn) => (
-        <div
-          key={btn.id}
-          onClick={() => handleFakeClick(btn.id)}
-          style={{
-            position: 'absolute',
-            left: btn.x,
-            top: btn.y,
-            cursor: 'pointer',
-            padding: '4px 8px',
-            background: clickedFake.includes(btn.id)
-              ? 'rgba(0,0,0,0.6)'
-              : 'rgba(255,255,255,0.2)',
-            borderRadius: 4,
-            color: clickedFake.includes(btn.id) ? '#666' : '#fff',
-            fontSize: 12,
-            ...(btn.style || {}),
-          }}
-        >
-          {clickedFake.includes(btn.id) ? '已点过' : btn.label}
-        </div>
-      ))}
 
       {/* 广告核心内容 */}
       <div style={{
         padding: '50px 20px 30px',
         textAlign: 'center',
       }}>
-        <div style={{
-          fontSize: 60,
-          marginBottom: 10,
-          animation: 'adBounce 1s infinite',
-        }}>
-          💎
-        </div>
+        <img
+          src="/evercold.jpg"
+          alt=""
+          style={{
+            width: '100%',
+            maxHeight: 200,
+            objectFit: 'contain',
+            marginBottom: 12,
+            borderRadius: 4,
+            animation: 'adTextPulse 0.8s infinite',
+          }}
+        />
         <Text style={{
           fontSize: 20,
           color: '#fff',
@@ -159,45 +151,33 @@ function AdModal({ visible, onRealClose }: AdModalProps) {
           borderRadius: 8,
         }}>
           <Text style={{ color: '#ff0', fontSize: 14, display: 'block' }}>
-            上线就送 +15 屠龙宝刀
-          </Text>
-          <Text style={{ color: '#0f0', fontSize: 14, display: 'block', marginTop: 4 }}>
-            充值任意金额送海量元宝
+            充值任意金额赠送百万金币
           </Text>
           <Text style={{ color: '#f0f', fontSize: 14, display: 'block', marginTop: 4 }}>
-            等级上限已开放至 9999 级
+            召唤神兽 AI 陪玩
+          </Text>
+          <Text style={{ color: '#0f0', fontSize: 14, display: 'block', marginTop: 4 }}>
+            时装坐骑上线就送
           </Text>
         </div>
         <div style={{
           marginTop: 20,
           padding: '12px 24px',
-          background: 'linear-gradient(135deg, #ffd700, #ff8c00)',
+          background: 'linear-gradient(90deg, #ffd700 0%, #ffec80 25%, #fff5c0 50%, #ffec80 75%, #ffd700 100%)',
+          backgroundSize: '200% 100%',
           borderRadius: 8,
           display: 'inline-block',
-          animation: 'adPulse 0.6s infinite',
+          animation: 'goldShimmer 1.2s linear infinite',
         }}>
           <Text style={{
             color: '#000',
             fontSize: 18,
             fontWeight: 'bold',
           }}>
-            🎮 点击此处立即下载 🎮
+            点击此处立即下载
           </Text>
         </div>
       </div>
-
-      {/* 底部虚假信息 */}
-      <div style={{
-        padding: '8px 16px',
-        background: 'rgba(0,0,0,0.4)',
-        display: 'flex',
-        justifyContent: 'space-between',
-        fontSize: 10,
-        color: '#999',
-      }}>
-        <span>已有 999999+ 人安装</span>
-        <span>风险提示：请理性消费</span>
-        <span>广告 ID: 20240711_FFXIV</span>
       </div>
     </Modal>
   )
