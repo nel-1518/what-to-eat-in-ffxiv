@@ -34,6 +34,16 @@ function DrinkSpin({ allNames, selectedName, onComplete }: DrinkSpinProps) {
   useEffect(() => {
     const startTime = Date.now()
 
+    // 近 10 次显示过的名称，避免重复
+    const recentHistory: string[] = []
+
+    // 从 allNames 中随机选一项，排除 recentHistory 中近 10 次的名称
+    const pickUnique = (): string => {
+      const pool = allNames.filter((name) => !recentHistory.includes(name))
+      const source = pool.length > 0 ? pool : allNames
+      return source[Math.floor(Math.random() * source.length)]
+    }
+
     // 根据经过时间计算当前间隔（二次缓出：保持快速更久，最后急剧降速）
     const getInterval = (elapsed: number) => {
       const t = Math.min(elapsed / SPIN_DURATION, 1)
@@ -61,9 +71,13 @@ function DrinkSpin({ allNames, selectedName, onComplete }: DrinkSpinProps) {
         return
       }
 
-      // 随机选一个名字显示
-      const randomName = allNames[Math.floor(Math.random() * allNames.length)]
+      // 随机选一个名字显示，保证近 10 次不重复
+      const randomName = pickUnique()
       setDisplayName(randomName)
+      recentHistory.push(randomName)
+      if (recentHistory.length > 10) {
+        recentHistory.shift()
+      }
 
       const interval = getInterval(elapsed)
       const t = setTimeout(scheduleNext, interval)
