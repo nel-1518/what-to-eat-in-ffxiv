@@ -238,7 +238,7 @@ function App() {
                     🥤 今天喝什么
                   </Title>
                   <Typography.Text type="secondary" className="app-subtitle">
-                    调制人生 改变饮料
+                    调制饮料 改变人生
                   </Typography.Text>
                   <Typography.Text className="app-quote">
                     来，请用！
