@@ -1,0 +1,192 @@
+[
+  {
+    "item": 4728,
+    "name": "葡萄干",
+    "description": "晒干之后的低地葡萄，甜味有所增加。",
+    "icon": 24058,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "低地葡萄x1",
+      "火之碎晶x1"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 4730,
+    "name": "梅干",
+    "description": "晒干之后的仙子梅，甜味有所增加。",
+    "icon": 24058,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "仙子梅x1",
+      "火之碎晶x2",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 4646,
+    "name": "牛肉干",
+    "description": "水牛的牛肉干，在太阳下晒干制成。",
+    "icon": 24353,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "水牛里脊x1",
+      "食盐x1",
+      "黑胡椒x1",
+      "撒沟厉鼠尾草x1",
+      "肉豆蔻x1",
+      "火之碎晶x5",
+      "水之碎晶x4"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 19819,
+    "name": "长颈骆肉干",
+    "description": "味道独特的长颈骆肉干。",
+    "icon": 24353,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "长颈骆肉x1",
+      "阿拉米格盐x1",
+      "孜然x1",
+      "黑胡椒x1",
+      "龙息椒x1",
+      "牛至x1",
+      "火之水晶x5",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 44077,
+    "name": "鲑鱼干",
+    "description": "将切成一半的鲑鱼用盐水清洗，然后用梅斯卡酒腌制并风干的鲑鱼干。",
+    "icon": 24334,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "梅斯卡料酒x2",
+      "夏劳尼鲑鱼x1",
+      "高山食盐x1",
+      "亚克特尔天然水x3",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 44882,
+    "name": "新薯片",
+    "description": "将新薯切成薄片炸透制成的零食。",
+    "icon": 53497,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "高山食盐x1",
+      "图拉尔玉米油x2",
+      "巨人新薯x3",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 23185,
+    "name": "金平糖",
+    "description": "在东方很有人气的糖果。",
+    "icon": 24085,
+    "recipeNotebookList": 1047,
+    "ingredient": [
+      "甜菜糖x2",
+      "甘露蜜x1",
+      "夜光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 39876,
+    "name": "鱼子酱佐小饼干",
+    "description": "将奶酪、蔬菜搭配盐渍鱼子酱放在小块饼干上的菜品。",
+    "icon": 24097,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "鲟鱼x1",
+      "加雷马奶酪x2",
+      "山地小麦粉x1",
+      "星外洋葱x1",
+      "血番茄x1",
+      "地鸣灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 49239,
+    "name": "烤干酪辣味玉米片",
+    "description": "将碾碎的玉米压薄烤成玉米脆片，再盖上以番茄为基底的酱料后制成的美食。",
+    "icon": 24172,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "燧石玉米x1",
+      "乌托姆辣酱x2",
+      "加雷马奶酪x1",
+      "乌托姆番茄x1",
+      "星外洋葱x1",
+      "紫电灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 49240,
+    "name": "焦糖爆米花",
+    "description": "加热膨胀的玉米粒裹上焦糖酱制成的甜点。从绽裂时的声音到可爱的外观都无比诱人，不论大人小孩都对这种美食爱不释手。",
+    "icon": 24229,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "燧石玉米x1",
+      "图拉尔玉米油x2",
+      "棕榈糖x1",
+      "麝牛奶x1",
+      "发酵黄油x1",
+      "紫电灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "零食"
+    ],
+    "calories": 250
+  }
+]

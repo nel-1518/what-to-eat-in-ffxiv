@@ -1,0 +1,313 @@
+/* ==================== 全局布局 ==================== */
+
+.app-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 20px 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 结果页时顶部对齐，不居中 */
+.app-container:has(#recipe-result) {
+  justify-content: flex-start;
+}
+
+/* ==================== 主题切换按钮 ==================== */
+
+.theme-switcher {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.theme-switcher-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.theme-switcher-btn:hover {
+  color: var(--color-text-primary);
+  background: rgba(128, 128, 128, 0.12);
+}
+
+.theme-switcher-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  min-width: 140px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-card);
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  animation: fadeIn 0.15s ease;
+}
+
+.theme-switcher-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.theme-switcher-option:hover {
+  background: var(--color-border);
+}
+
+.theme-switcher-option.active {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.theme-switcher-option-icon {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.theme-switcher-check {
+  margin-left: auto;
+  font-size: 14px;
+}
+
+/* ==================== 页面过渡动画 ==================== */
+
+.page-transition {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-enter {
+  animation: pageSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.page-exit {
+  animation: pageSlideOut 0.35s cubic-bezier(0.55, 0, 1, 0.45) both;
+  pointer-events: none;
+}
+
+@keyframes pageSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes pageSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.98);
+    filter: blur(3px);
+  }
+}
+
+/* ==================== 进度视图 ==================== */
+
+.progress-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.progress-view-content {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ==================== 顶部标题 ==================== */
+
+.app-title {
+  margin-bottom: 4px !important;
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-light),
+    var(--color-accent)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.6em !important;
+  line-height: 1.3 !important;
+}
+
+.app-subtitle {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+/* ==================== 主按钮 ==================== */
+
+.app-button-area {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.main-button {
+  height: 60px !important;
+  padding: 0 48px !important;
+  font-size: 22px !important;
+  font-weight: bold !important;
+  border-radius: 30px !important;
+  background: linear-gradient(
+    135deg,
+    var(--color-accent),
+    var(--color-accent-light)
+  ) !important;
+  border: none !important;
+  color: var(--color-btn-text) !important;
+  box-shadow: var(--shadow-button);
+  transition: all 0.3s ease;
+}
+
+.main-button:hover {
+  opacity: 0.9;
+}
+
+.main-button:active {
+  opacity: 0.8;
+}
+
+.button-hint {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+/* ==================== 动画 ==================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    box-shadow: 0 4px 20px rgba(162, 71, 48, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 40px rgba(162, 71, 48, 0.5);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes adFlash {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.98;
+  }
+}
+
+@keyframes adTextPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes adBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ==================== 响应式 ==================== */
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 70px 12px 20px;
+  }
+
+  .app-title {
+    font-size: 2.6em !important;
+    font-weight: 900 !important;
+  }
+
+  .main-button {
+    height: 50px !important;
+    padding: 0 32px !important;
+    font-size: 18px !important;
+  }
+
+  .theme-switcher {
+    top: 8px;
+    right: 8px;
+    padding: 3px;
+  }
+}
+
+.app-button-area {
+  padding: 40px 0;
+}

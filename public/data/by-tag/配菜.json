@@ -1,0 +1,1281 @@
+[
+  {
+    "item": 4650,
+    "name": "水煮蛋",
+    "description": "白水煮熟的鸡蛋。",
+    "icon": 24255,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "鸡蛋x1",
+      "矿泉水x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 70
+  },
+  {
+    "item": 4689,
+    "name": "煎鸡油菌",
+    "description": "黄油煎鸡油菌。",
+    "icon": 24205,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "鸡油菌x1",
+      "黄油x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 4681,
+    "name": "杰克南瓜灯",
+    "description": "在煮熟的南瓜上刻出脸的形状。",
+    "icon": 24153,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "食人魔南瓜x1",
+      "蜂蜡x1",
+      "枫糖浆x1",
+      "矿泉水x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 4666,
+    "name": "盐渍鳕鱼",
+    "description": "盐渍过的虎纹鳕。",
+    "icon": 24315,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "虎纹鳕x1",
+      "食盐x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 4651,
+    "name": "渡渡鸟蛋煎蛋卷",
+    "description": "平原之民的传统菜，用黄油煎渡渡鸟蛋。",
+    "icon": 24253,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "渡渡鸟蛋x1",
+      "黄油x1",
+      "山羊奶x1",
+      "食盐x1",
+      "番茄汁x1",
+      "高原芹x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 4754,
+    "name": "农家奶酪",
+    "description": "爽口的液状新鲜奶酪。",
+    "icon": 24452,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "山羊奶x1",
+      "苹果醋x1",
+      "火之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 4674,
+    "name": "小扁豆煮山栗",
+    "description": "把小扁豆和山栗放到一起用红酒煮。",
+    "icon": 24106,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "山栗x1",
+      "小扁豆x1",
+      "婴猴薄荷x1",
+      "橄榄油x1",
+      "料酒x1",
+      "黑胡椒x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 4683,
+    "name": "烤仙人掌叶",
+    "description": "加有蔬菜汁的仙人掌叶，烤起来就像肉排一样。",
+    "icon": 24158,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "仙人掌叶x1",
+      "食盐x1",
+      "蓝霉奶酪x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 4722,
+    "name": "新薯泥",
+    "description": "将新薯和奶酪混合在一起捣成泥状的新大陆风味食品。",
+    "icon": 24457,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "农家奶酪x1",
+      "新薯x1",
+      "黄油x1",
+      "奶油x1",
+      "大蒜x1",
+      "火之碎晶x2",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 4684,
+    "name": "煎菠菜",
+    "description": "黄油煎菠菜。",
+    "icon": 24152,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "谢尔达莱菠菜x3",
+      "草菇x1",
+      "食盐x1",
+      "黄油x1",
+      "矿泉水x1",
+      "火之碎晶x2",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 60
+  },
+  {
+    "item": 4652,
+    "name": "芥末蛋",
+    "description": "将水煮蛋放到盛有芥末的容器中，对制作者的调配手法有很高的要求。",
+    "icon": 24254,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "渡渡鸟蛋x1",
+      "阿拉米格芥子x1",
+      "矿泉水x1",
+      "食盐x1",
+      "火之碎晶x2",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 4653,
+    "name": "煎跳蜥蛋",
+    "description": "用黄油煎跳蜥蛋制作而成。",
+    "icon": 24257,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "跳蜥蛋x1",
+      "黄油x1",
+      "食盐x1",
+      "矿泉水x1",
+      "火之碎晶x3",
+      "水之碎晶x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 4691,
+    "name": "猫魅风味森鲜烤串",
+    "description": "护月之民的传统食物，将蘑菇穿成一串用火烧烤。",
+    "icon": 24201,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "草菇x1",
+      "红宝石番茄x1",
+      "芦荟x1",
+      "薰衣草油x1",
+      "食盐x1",
+      "黑胡椒x1",
+      "火之碎晶x3",
+      "水之碎晶x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 4654,
+    "name": "炒跳蜥蛋",
+    "description": "将跳蜥的蛋搅拌之后过油炒熟，里面还加入了白松露调味。",
+    "icon": 24256,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "白松露x1",
+      "跳蜥蛋x1",
+      "农家奶酪x1",
+      "食盐x1",
+      "火之碎晶x4",
+      "水之碎晶x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 4756,
+    "name": "奶油奶酪",
+    "description": "用水牛的奶制作的滑嫩奶酪。",
+    "icon": 24455,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "野牛奶x2",
+      "奶油x1",
+      "火之碎晶x4"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 4686,
+    "name": "酸泡菜",
+    "description": "用盐腌制的甘蓝细丝。",
+    "icon": 24155,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "中原甘蓝x1",
+      "月桂x1",
+      "食盐x1",
+      "龙息椒x1",
+      "矿泉水x1",
+      "火之碎晶x4",
+      "水之碎晶x4"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 50
+  },
+  {
+    "item": 4677,
+    "name": "香烩时蔬",
+    "description": "用薰衣草油炒制多种蔬菜，再用鸡高汤慢慢熬熟。",
+    "icon": 24108,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "巫茄x1",
+      "西葫芦x1",
+      "红宝石番茄x1",
+      "月桂x1",
+      "薰衣草油x1",
+      "大蒜x1",
+      "火之碎晶x4",
+      "水之碎晶x4"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 4687,
+    "name": "包心球蓟",
+    "description": "将蟹肉和奶酪填入球蓟中一起用火烧烤。",
+    "icon": 24159,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "球蓟x1",
+      "陆蟹蟹脚x1",
+      "奶油x1",
+      "黑胡椒x1",
+      "蓝霉奶酪x1",
+      "骑士面包x1",
+      "火之碎晶x5",
+      "水之碎晶x4"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 4757,
+    "name": "罗兰莓奶酪",
+    "description": "加入了罗兰莓干的水牛奶酪。",
+    "icon": 24456,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "野牛奶x2",
+      "罗兰莓x1",
+      "火之碎晶x5"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 4693,
+    "name": "蒜炒草菇",
+    "description": "用橄榄油炒制的草菇，加入了大蒜调味。",
+    "icon": 24202,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "橄榄油x1",
+      "大蒜x1",
+      "草菇x3",
+      "食盐x1",
+      "撒沟厉鼠尾草x1",
+      "火之碎晶x5",
+      "水之碎晶x5"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 4664,
+    "name": "包心甘蓝",
+    "description": "北洋之民的传统菜肴，将狗鱼肉包进甘蓝卷中。",
+    "icon": 24307,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "中原甘蓝x1",
+      "北方狗鱼x1",
+      "明胶x1",
+      "库尔札斯胡萝卜x1",
+      "盐韭x1",
+      "丁香油x1",
+      "火之碎晶x6",
+      "水之碎晶x5"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 4655,
+    "name": "辛辣蛋",
+    "description": "将白肉鱼的肉末填入鸡蛋中制成。",
+    "icon": 24251,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "碧企鹅蛋x1",
+      "满月沙丁鱼x1",
+      "高原芹x1",
+      "红辣椒x1",
+      "阿拉米格芥子x1",
+      "太阳柠檬x1",
+      "火之碎晶x6",
+      "水之碎晶x5"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 4694,
+    "name": "草菇甘蓝卷",
+    "description": "用过过热水的甘蓝将草菇卷起来下锅煮制而成。",
+    "icon": 24206,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "草菇x3",
+      "中原甘蓝x1",
+      "红宝石番茄x1",
+      "番茄汁x1",
+      "食盐x1",
+      "沙漠番红花x1",
+      "火之碎晶x6",
+      "水之碎晶x6"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 4656,
+    "name": "碧企鹅蛋卷",
+    "description": "拉诺西亚的名菜，将碧企鹅的蛋配上黄油制作而成。",
+    "icon": 24253,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "黑松露x1",
+      "碧企鹅蛋x1",
+      "奶油x1",
+      "黄油x1",
+      "食盐x1",
+      "矿泉水x1",
+      "火之晶簇x1",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 7575,
+    "name": "菠菜乳蛋饼",
+    "description": "用馅饼坯做容器，加入菠菜和奶酪等材料，之后烤熟制成的蛋饼。",
+    "icon": 24252,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "谢尔达莱嫩菠菜x1",
+      "碧企鹅蛋x1",
+      "馅饼坯x1",
+      "肉豆蔻x1",
+      "奶油奶酪x1",
+      "食盐x1",
+      "火之晶簇x1",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 12853,
+    "name": "煎牛肝菌",
+    "description": "黄油煎牛肝菌。",
+    "icon": 24205,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "牛肝菌x2",
+      "大蒜x1",
+      "撒沟厉鼠尾草x1",
+      "发酵黄油x1",
+      "拉诺西亚岩盐x1",
+      "火之水晶x4",
+      "水之水晶x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 12859,
+    "name": "皇家蒸蛋",
+    "description": "将蒸蛋和熏鳟鱼放在伊修加德松饼上，再浇上处理过的蛋黄酱，香气扑鼻。",
+    "icon": 24260,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "俄刻阿尼斯蛋x2",
+      "蛋黄酱x1",
+      "显贵樱鳟x1",
+      "伊修加德松饼x1",
+      "火之水晶x5",
+      "水之水晶x4"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 12866,
+    "name": "菜包肉",
+    "description": "将肉末卷入用水焯过的包心菜中，煮制而成。",
+    "icon": 24206,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "小包心菜x3",
+      "洛夫坦山羊雪花肉x2",
+      "鸡高汤x1",
+      "番茄汁x1",
+      "拉诺西亚岩盐x1",
+      "火之水晶x3",
+      "水之水晶x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 12868,
+    "name": "包心卡贝基",
+    "description": "将俄刻阿尼斯肉塞入卡贝基野菜中，再配上库尔札斯青葱制成。",
+    "icon": 24159,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "卡贝基野菜x3",
+      "俄刻阿尼斯肉x2",
+      "奶油奶酪x1",
+      "库尔札斯青葱x2",
+      "蛋黄酱x1",
+      "阿巴拉提亚岩盐x1",
+      "火之水晶x6",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 19820,
+    "name": "芙蓉蟹",
+    "description": "加入了蟹肉的松松软软的鸡蛋菜肴。",
+    "icon": 24256,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "迦迦纳怪鸟蛋x1",
+      "刻木蟹x1",
+      "葛根x1",
+      "香菇x1",
+      "竹笋x1",
+      "鱼高汤x1",
+      "火之水晶x5",
+      "水之水晶x4"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 19829,
+    "name": "味噌田乐",
+    "description": "在木棉豆腐和蔬菜上浇上甜味噌汁烧制而成，是一种美味的东方佳肴。",
+    "icon": 24161,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "木棉豆腐x1",
+      "多玛茄子x1",
+      "白萝卜x1",
+      "味噌x1",
+      "甜菜糖x1",
+      "味淋酒x1",
+      "火之水晶x5",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 27865,
+    "name": "煎蘑菇",
+    "description": "用黄油煎过的奶油菇。",
+    "icon": 24202,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "奶油菇x1",
+      "油橄榄油x1",
+      "阿巴拉提亚岩盐x1",
+      "发酵黄油x1",
+      "火之水晶x7",
+      "水之水晶x6"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 27868,
+    "name": "蘑菇烤串",
+    "description": "奶油菇与蔬菜的烤串。",
+    "icon": 24201,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "琥珀丁香x1",
+      "奶油菇x2",
+      "血番茄x1",
+      "西葫芦x1",
+      "阿巴拉提亚岩盐x1",
+      "火之水晶x7",
+      "水之水晶x6"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 27870,
+    "name": "胡椒炒新薯",
+    "description": "用黄新薯和香肠炒制而成的菜肴。",
+    "icon": 24163,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "香肠x1",
+      "黄新薯x2",
+      "卷叶芹x1",
+      "阿巴拉提亚岩盐x1",
+      "黑夜胡椒x1",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 27871,
+    "name": "焗黄新薯",
+    "description": "使用了大量黄新薯制作而成的焗菜。",
+    "icon": 24112,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "黄新薯x1",
+      "山地小麦粉x1",
+      "草原牛奶x1",
+      "云海洋葱x1",
+      "奶油奶酪x1",
+      "黑夜胡椒x1",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 27875,
+    "name": "黄油煎迷雾菠菜",
+    "description": "用黄油煎制的迷雾菠菜。",
+    "icon": 24152,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "迷雾菠菜x1",
+      "黑夜醋x1",
+      "发酵黄油x1",
+      "黑夜胡椒x1",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 60
+  },
+  {
+    "item": 32212,
+    "name": "铁锅番茄炖蛋",
+    "description": "将鸡蛋打入番茄酱里炖煮而成的热腾腾的菜肴。",
+    "icon": 53385,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "力山羊肉x1",
+      "龙堡红辣椒x1",
+      "血番茄x1",
+      "鹦鹉蛋x1",
+      "龙息椒x1",
+      "百里香x1",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 36047,
+    "name": "胡萝卜丝",
+    "description": "使用果醋给切成细丝的开心胡萝卜调味后做成的开胃菜。",
+    "icon": 24165,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "开心胡萝卜x2",
+      "黄瓜x2",
+      "黑夜醋x1",
+      "云海洋葱x1",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 36050,
+    "name": "辣味番茄炖蛋",
+    "description": "将番茄酱和香料一同炖煮之后，再在上方打上一个蛋制成的美味佳肴。",
+    "icon": 24262,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "亚考牛肩肉x1",
+      "萨维奈彩椒x2",
+      "血番茄x1",
+      "厄尔庇斯之鸟蛋x1",
+      "古代肉豆蔻x1",
+      "紫苏油x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 38585,
+    "name": "奶酪火锅",
+    "description": "黏糊糊的奶酪火锅。附有种类丰富的配菜供人尝试。",
+    "icon": 53435,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "加雷马奶酪x2",
+      "裸麦粉x2",
+      "开心胡萝卜x1",
+      "手指虾x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 44090,
+    "name": "西兰花炒菠菜",
+    "description": "用西兰花和菠菜炒制而成的蔬菜菜肴。",
+    "icon": 24152,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "图拉尔玉米油x1",
+      "高山食盐x1",
+      "西兰花x2",
+      "柿子椒x1",
+      "迷雾菠菜x1",
+      "奶油菇x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 9332,
+    "name": "煌黑鱼子酱",
+    "description": "煌鱼的鱼籽十分珍贵，有黑色宝石之称。",
+    "icon": 24259,
+    "recipeNotebookList": 1015,
+    "ingredient": [
+      "硼砂x1",
+      "煌鱼x1",
+      "纯净水x1",
+      "拉诺西亚岩盐x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 12857,
+    "name": "香烤湖胆",
+    "description": "在湖胆中混入蘑菇及香料，放入烤箱烤制而成。",
+    "icon": 24318,
+    "recipeNotebookList": 1023,
+    "ingredient": [
+      "温泉胆x2",
+      "湖胆x1",
+      "伞蘑x1",
+      "牦牛奶油x1",
+      "俄刻阿尼斯蛋x1",
+      "微光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 14141,
+    "name": "糖沼鯥",
+    "description": "用糖煮过的沼鯥，可以放很长时间都不变质。",
+    "icon": 24301,
+    "recipeNotebookList": 1031,
+    "ingredient": [
+      "沼鯥x1",
+      "桦木糖浆x1",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 16712,
+    "name": "嫩炒蛋",
+    "description": "炒到松软程度的鸡蛋，加入了用奶油煎炒的蘑菇。",
+    "icon": 24119,
+    "recipeNotebookList": 1031,
+    "ingredient": [
+      "苍穹鸡蛋x1",
+      "棕菇x1",
+      "云海洋葱x1",
+      "甜牛奶x1",
+      "奶油x1",
+      "阿巴拉提亚岩盐x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 21088,
+    "name": "蒸蛋羹",
+    "description": "将搅拌好的蛋液和高汤混合在一起蒸制出的东方菜肴。",
+    "icon": 24261,
+    "recipeNotebookList": 1039,
+    "ingredient": [
+      "迦迦纳怪鸟蛋x1",
+      "秘制高汤x1",
+      "阿拉米格盐x1",
+      "香菇x1",
+      "延夏芹x1",
+      "夜光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 22437,
+    "name": "煎绿韭葱",
+    "description": "油煎绿韭葱，还加入了大蒜调味。",
+    "icon": 24152,
+    "recipeNotebookList": 1047,
+    "ingredient": [
+      "粉红胡椒x1",
+      "绿韭葱x2",
+      "至日大蒜x1",
+      "棉籽油x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 60
+  },
+  {
+    "item": 23188,
+    "name": "辣椒焗奶酪",
+    "description": "从太阳神草原深处流传出的菜肴，由奶酪和辣椒煮制而成。",
+    "icon": 24122,
+    "recipeNotebookList": 1047,
+    "ingredient": [
+      "粉红胡椒x1",
+      "龙息椒x4",
+      "石间清水x2",
+      "奶油奶酪x1",
+      "云海洋葱x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 24277,
+    "name": "僧厥镶茄子",
+    "description": "传说中星导教的武僧在品尝了这道镶茄子之后，因为过于美味而昏厥了过去。",
+    "icon": 24162,
+    "recipeNotebookList": 1047,
+    "ingredient": [
+      "多玛茄子x3",
+      "基拉巴尼亚胡萝卜x2",
+      "泽梅尔番茄x2",
+      "云海洋葱x1",
+      "高原芹x1",
+      "粉红胡椒x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 24280,
+    "name": "番茄炖蛋",
+    "description": "是一种将禽类的蛋放进番茄酱汁中炖煮的菜肴。",
+    "icon": 24262,
+    "recipeNotebookList": 1047,
+    "ingredient": [
+      "红州黑猪肉x1",
+      "龙堡红辣椒x2",
+      "泽梅尔番茄x2",
+      "迦迦纳怪鸟蛋x1",
+      "龙息椒x1",
+      "百里香x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 29501,
+    "name": "香肠泡菜",
+    "description": "香肠与泡菜的拼盘。",
+    "icon": 24367,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "高地甘蓝x2",
+      "黑夜醋x1",
+      "欧薄荷x2",
+      "力山羊肉x2",
+      "羊肠x1",
+      "黑胡椒x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 29502,
+    "name": "高地风味菜肉卷",
+    "description": "过水的高地甘蓝包上肉馅，经过炖煮后得到的美味佳肴。",
+    "icon": 24206,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "高地甘蓝x2",
+      "油橄榄油x1",
+      "迷雾菠菜x2",
+      "血番茄x2",
+      "力山羊肉x1",
+      "黑胡椒x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 29503,
+    "name": "腌鲱鱼",
+    "description": "白金鲱鱼用醋泡制后加入小柠檬得到的美味佳肴。",
+    "icon": 24327,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "白金鲱鱼x2",
+      "油橄榄油x1",
+      "小柠檬x2",
+      "卷叶芹x2",
+      "云海洋葱x1",
+      "红辣椒x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 29505,
+    "name": "农场早餐",
+    "description": "新薯和鸡蛋制作而成的朴素家庭料理。",
+    "icon": 24263,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "乌鸡蛋x2",
+      "油橄榄油x1",
+      "黄新薯x2",
+      "力山羊肉x2",
+      "卷叶芹x1",
+      "云海洋葱x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 31899,
+    "name": "迷雾菠菜乳蛋饼",
+    "description": "在馅饼坯中加入迷雾菠菜和奶酪烤制而成的菜肴。",
+    "icon": 24252,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "马苏里拉奶酪x2",
+      "山地小麦粉x2",
+      "迷雾菠菜x1",
+      "鹦鹉蛋x2",
+      "地下天然水x1",
+      "阿拉米格盐x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 36069,
+    "name": "南瓜香烩时蔬",
+    "description": "用紫苏油翻炒数种蔬菜制成的美味佳肴。",
+    "icon": 24108,
+    "recipeNotebookList": 1311,
+    "ingredient": [
+      "巨型南瓜x1",
+      "天然香料x1",
+      "紫苏油x2",
+      "黄瓜x1",
+      "血番茄x1",
+      "大蒜x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 38263,
+    "name": "落日胡萝卜丝",
+    "description": "使用果醋给切成细丝的落日胡萝卜调味后做成的开胃菜。",
+    "icon": 24165,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "落日胡萝卜x1",
+      "紫苏油x2",
+      "黑夜醋x1",
+      "星外洋葱x1",
+      "黄瓜x1",
+      "晓月灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 38270,
+    "name": "焗帝王海胆佐面包",
+    "description": "将细筛过的帝王海胆与蘑菇香料混合后，放入烤箱烤制而成的美食。",
+    "icon": 24318,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "帝王海胆x1",
+      "椰奶x2",
+      "牦牛奶油x1",
+      "厄尔庇斯之鸟蛋x1",
+      "奶油菇x1",
+      "晓月灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 39871,
+    "name": "茄泥酱",
+    "description": "将烤制后的暗色茄子捣成泥，与香辛料制作的糊拌匀后制成的萨维奈传统菜肴。",
+    "icon": 24457,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "暗色茄子x1",
+      "紫苏油x2",
+      "海藻盐x1",
+      "萨维奈彩椒x1",
+      "大蒜x1",
+      "地鸣灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 39872,
+    "name": "烧烤暗色茄子",
+    "description": "将大量的奶酪与蔬菜放在暗色茄子上烤制而成的菜肴。",
+    "icon": 24162,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "暗色茄子x1",
+      "加雷马奶酪x2",
+      "油橄榄油x1",
+      "巨人新薯x1",
+      "血番茄x1",
+      "地鸣灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 39877,
+    "name": "浅腌球形甘蓝",
+    "description": "将球形甘蓝用黑夜醋为主的调料进行腌制的凉菜。",
+    "icon": 24170,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "球形甘蓝x1",
+      "紫苏油x2",
+      "黑夜醋x1",
+      "萨维奈彩椒x1",
+      "星外洋葱x1",
+      "地鸣灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 50
+  },
+  {
+    "item": 44842,
+    "name": "酸柠檬腌鱼",
+    "description": "以柠檬和盐腌制的旗鱼，是图莱尤拉本地人十分喜爱的海鲜。",
+    "icon": 24337,
+    "recipeNotebookList": 1495,
+    "ingredient": [
+      "云旗鱼x1",
+      "图拉尔玉米油x2",
+      "北洋食盐x1",
+      "萨维奈彩椒x1",
+      "小柠檬x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 49243,
+    "name": "犎牛奶汁焗菜",
+    "description": "使用犎牛奶炖煮大蒜和洋葱制成的一道口味浓厚且独特的奶汁焗菜。",
+    "icon": 24116,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "犎牛奶x1",
+      "高山食盐x2",
+      "山地小麦粉x1",
+      "亚斯拉尼蒜头x1",
+      "星外洋葱x1",
+      "紫电灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 49245,
+    "name": "炖剑山芋",
+    "description": "亚历山德里亚传统美食。关于这种美食还有个著名的民间故事，据说有一位女孩为意中人制作这道菜的时候，很是纠结要不要按秘方放山蟑虫。",
+    "icon": 24109,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "剑山芋x1",
+      "高山食盐x2",
+      "山地小麦粉x1",
+      "天水x1",
+      "食人魔南瓜x1",
+      "紫电灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "配菜"
+    ],
+    "calories": 200
+  }
+]

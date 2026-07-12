@@ -1,0 +1,2240 @@
+[
+  {
+    "item": 4639,
+    "name": "栗鼠肉排",
+    "description": "加了洋葱和大蒜的栗鼠肉排。",
+    "icon": 24355,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "栗鼠肉x1",
+      "野洋葱x1",
+      "大蒜x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 4660,
+    "name": "盐烤公主鳟",
+    "description": "撒上盐之后烤制的公主鳟。",
+    "icon": 24301,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "公主鳟x1",
+      "食盐x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4658,
+    "name": "绿树蟾蜍腿",
+    "description": "将绿树蟾蜍的后腿裹上一层面衣后用油炸，同时还加有蜗牛调味。",
+    "icon": 24313,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "绿树蟾蜍x1",
+      "亚拉戈蜗牛x1",
+      "黄油x1",
+      "小麦粉x1",
+      "大蒜x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 4657,
+    "name": "红焖皮皮拉鱼",
+    "description": "将皮皮拉鱼配上鸡油菌一起用黄油焖。",
+    "icon": 24311,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "皮皮拉鱼x1",
+      "鸡油菌x1",
+      "黄油x1",
+      "食盐x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4659,
+    "name": "水煮蝲蛄",
+    "description": "煮得很软的蝲蛄。",
+    "icon": 24306,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "红蝲蛄x1",
+      "食盐x1",
+      "矿泉水x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 4673,
+    "name": "清炖羊肉",
+    "description": "羊肉炖蔬菜。",
+    "icon": 24107,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "羊后腰肉x1",
+      "小麦粉x1",
+      "野洋葱x1",
+      "库尔札斯胡萝卜x1",
+      "矿泉水x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类",
+      "汤品"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 4640,
+    "name": "渡渡鸟烤肉",
+    "description": "俾斯麦餐厅很受欢迎的菜品，烤渡渡鸟的胸肉。",
+    "icon": 24352,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "渡渡鸟胸肉x1",
+      "食盐x1",
+      "大蒜x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 4641,
+    "name": "鼹鼠肉糕",
+    "description": "用鼹鼠的肉末和切碎的洋葱混合做出的肉糕。",
+    "icon": 24356,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "鼹鼠肉x1",
+      "野洋葱x1",
+      "煎饼x1",
+      "鸡蛋x1",
+      "番茄汁x1",
+      "黑胡椒x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 4661,
+    "name": "盐烤鲤鱼",
+    "description": "撒上盐之后烤制的白妙鲤。",
+    "icon": 24302,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "白妙鲤x1",
+      "食盐x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4642,
+    "name": "猫魅风味山珍烤串",
+    "description": "护月之民的传统食物，将渡渡鸟肉和西红柿穿成一串用火烧烤。",
+    "icon": 24351,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "渡渡鸟胸肉x1",
+      "红辣椒x1",
+      "红宝石番茄x1",
+      "食盐x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4667,
+    "name": "生鲜牡蛎",
+    "description": "撒上柠檬汁的生鲜牡蛎。",
+    "icon": 24316,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "罗斯利特牡蛎x1",
+      "太阳柠檬x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 4690,
+    "name": "金钱蘑炒鸡肉",
+    "description": "将鸡胸肉和金钱蘑一起炒的简单家庭菜。",
+    "icon": 24204,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "金钱蘑x1",
+      "鸡胸肉x1",
+      "黄油x1",
+      "食盐x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4675,
+    "name": "清炖羚羊肉",
+    "description": "羚羊肉炖蔬菜。",
+    "icon": 24110,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "羚羊胫肉x1",
+      "小麦粉x1",
+      "野洋葱x1",
+      "库尔札斯胡萝卜x1",
+      "新薯x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类",
+      "汤品"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 4643,
+    "name": "羚羊肉排",
+    "description": "将富有弹性的羚羊肌肉用火充分烤熟而成。",
+    "icon": 24360,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "羚羊胫肉x1",
+      "食盐x1",
+      "大蒜x1",
+      "火之碎晶x2",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 4662,
+    "name": "鲑鱼排",
+    "description": "逐日之民传统食物，将鲑鱼裹上小麦粉，再用黄油煎烤。",
+    "icon": 24303,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "蓝铃鲑x1",
+      "黄油x1",
+      "太阳柠檬x1",
+      "小麦粉x1",
+      "高原芹x1",
+      "火之碎晶x2",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 4644,
+    "name": "山羊肉排",
+    "description": "高地之民的传统烧烤，将山羊的肉烤至半熟。",
+    "icon": 24360,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "山羊肩肉x1",
+      "食盐x1",
+      "大蒜x1",
+      "火之碎晶x2",
+      "水之碎晶x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 4668,
+    "name": "水煮鲷鱼",
+    "description": "水煮勾芡的鲷鱼。",
+    "icon": 24312,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "比阿纳可鲷鱼x1",
+      "橄榄油x1",
+      "大蒜x1",
+      "巫茄x1",
+      "野洋葱x1",
+      "中原甘蓝x1",
+      "火之碎晶x3",
+      "水之碎晶x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4676,
+    "name": "清炖鬼鮟鱇",
+    "description": "以鬼鮟鱇的肝为主料的炖菜，营养丰富。",
+    "icon": 24109,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "鬼鮟鱇肝脏x1",
+      "库尔札斯胡萝卜x1",
+      "小麦粉x1",
+      "黑胡椒x1",
+      "鸡高汤x1",
+      "奶油x1",
+      "火之碎晶x3",
+      "水之碎晶x2"
+    ],
+    "tag": [
+      "肉类",
+      "汤品"
+    ],
+    "calories": 280
+  },
+  {
+    "item": 4669,
+    "name": "烤黑鳎",
+    "description": "浇上了金钱蘑汤汁的烤黑鳎。",
+    "icon": 24309,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "黑鳎x1",
+      "金钱蘑x1",
+      "谢尔达莱菠菜x1",
+      "食盐x1",
+      "火之碎晶x3",
+      "水之碎晶x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4645,
+    "name": "盗龙熏肉",
+    "description": "蜥蜴人独有风味的熏制盗龙腿肉。",
+    "icon": 24358,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "盗龙腿肉x1",
+      "橄榄油x1",
+      "太阳柠檬x1",
+      "食盐x1",
+      "黑胡椒x1",
+      "火之碎晶x3",
+      "水之碎晶x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 4670,
+    "name": "猫魅风味海产烤串",
+    "description": "逐日之民的传统食物，将金枪鱼肉穿成一串用火烧烤。",
+    "icon": 24304,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "灰海金枪鱼x1",
+      "中原罗勒草x1",
+      "橄榄油x1",
+      "太阳柠檬x1",
+      "食盐x1",
+      "手指虾x1",
+      "火之碎晶x4",
+      "水之碎晶x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4663,
+    "name": "艾蒿烤鲤鱼",
+    "description": "将白妙鲤用艾蒿煨过之后再用火烧烤。",
+    "icon": 24314,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "威罗迪纳鲤鱼x1",
+      "食盐x1",
+      "艾蒿x1",
+      "火之碎晶x4",
+      "水之碎晶x4"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4692,
+    "name": "清炖盗龙肉",
+    "description": "将盗龙的腿肉与食用菌一起炖，魔女咖啡馆的招牌菜。",
+    "icon": 24203,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "金钱蘑x1",
+      "鸡油菌x1",
+      "盗龙腿肉x1",
+      "小麦粉x1",
+      "食盐x1",
+      "火之碎晶x5",
+      "水之碎晶x4"
+    ],
+    "tag": [
+      "肉类",
+      "汤品"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 4671,
+    "name": "油炸盐渍鳕鱼丸",
+    "description": "用油炸的腌制鳕鱼馅的丸子。",
+    "icon": 24308,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "盐渍鳕鱼x1",
+      "百里香x1",
+      "碧企鹅蛋x1",
+      "丁香油x1",
+      "小麦粉x1",
+      "肉豆蔻x1",
+      "火之碎晶x5",
+      "水之碎晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4647,
+    "name": "水蜥肉排",
+    "description": "快火烧烤的水蜥尾肉，弹力十足。",
+    "icon": 24352,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "水蜥尾肉x1",
+      "黑胡椒x1",
+      "大蒜x1",
+      "料酒x1",
+      "苹果醋x1",
+      "月桂x1",
+      "火之碎晶x6",
+      "水之碎晶x6"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 4678,
+    "name": "清炖牛肉",
+    "description": "用红酒慢慢炖出来的水牛肉。",
+    "icon": 24110,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "小麦粉x1",
+      "水牛里脊x1",
+      "黑胡椒x1",
+      "野洋葱x1",
+      "料酒x1",
+      "矿泉水x1",
+      "火之碎晶x6",
+      "水之碎晶x6"
+    ],
+    "tag": [
+      "肉类",
+      "汤品"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 6142,
+    "name": "盐烤暖水鳟",
+    "description": "撒上盐之后烤制的暖水鳟。",
+    "icon": 24301,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "暖水鳟x1",
+      "食盐x1",
+      "大蒜x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 6143,
+    "name": "盐烤求雨鱼",
+    "description": "撒上盐之后烤制的求雨鱼。",
+    "icon": 24301,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "求雨鱼x1",
+      "食盐x1",
+      "火之碎晶x5",
+      "水之碎晶x4"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 4679,
+    "name": "泽梅尔家风味焗菜",
+    "description": "泽梅尔家的传统焗菜，食材为水蜥尾肉和新薯。",
+    "icon": 24112,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "新薯x1",
+      "大蒜x1",
+      "黑胡椒x1",
+      "肉豆蔻x1",
+      "奶油x1",
+      "水蜥尾肉x1",
+      "火之碎晶x5",
+      "水之碎晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 4672,
+    "name": "油炸鲯鳅块",
+    "description": "将麻希鲯鳅的肉块裹上一层面衣，之后过油炸制而成。",
+    "icon": 24309,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "麻希鲯鳅x1",
+      "小麦粉x1",
+      "橄榄油x3",
+      "食盐x1",
+      "火之水晶x3",
+      "水之水晶x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 4648,
+    "name": "葡萄酒煎豹肉",
+    "description": "长须豹的肉配黄油煎炸，并加入香醇的葡萄酒调味。",
+    "icon": 24355,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "长须豹肉x1",
+      "高级料酒x1",
+      "拉诺西亚岩盐x1",
+      "大蒜x1",
+      "黄油x1",
+      "火之晶簇x1",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 4665,
+    "name": "熔岩蟾蜍腿",
+    "description": "将熔岩蟾蜍的后腿裹上一层面衣后用油炸，同时还加有蜗牛调味。",
+    "icon": 24310,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "熔岩蟾蜍x1",
+      "亚拉戈蜗牛x1",
+      "野洋葱x1",
+      "龙息椒x1",
+      "小麦粉x1",
+      "中原罗勒草x1",
+      "火之晶簇x1",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 8802,
+    "name": "星芒节烤渡渡鸟",
+    "description": "星芒节时期的招牌美食。",
+    "icon": 53054,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "渡渡鸟雏肉x1",
+      "渡渡鸟填料x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 10332,
+    "name": "炸鱼套餐",
+    "description": "炸鱼配上炸新薯，这种传统的美食相信大家都吃过。",
+    "icon": 24319,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "黑线鳕x1",
+      "新薯x1",
+      "橄榄油x1",
+      "食盐x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 400
+  },
+  {
+    "item": 12855,
+    "name": "盐烤香鱼",
+    "description": "处理过的香鱼撒上盐后烤制而成。",
+    "icon": 24301,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "香鱼x1",
+      "拉诺西亚岩盐x2",
+      "火之水晶x4",
+      "水之水晶x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 12856,
+    "name": "菌蒸皮皮拉鱼",
+    "description": "黄油蒸皮皮拉皮拉鱼和牛肝菌。",
+    "icon": 24311,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "皮皮拉皮拉鱼x1",
+      "阿巴拉提亚岩盐x1",
+      "牛肝菌x2",
+      "发酵黄油x1",
+      "火之水晶x5",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 12858,
+    "name": "魔蛇鸟肉丸",
+    "description": "用魔蛇鸟肉末烧制而成，香嫩柔软。",
+    "icon": 24356,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "魔蛇鸟肉x3",
+      "云海洋葱x2",
+      "煎饼x1",
+      "番茄汁x1",
+      "阿巴拉提亚岩盐x1",
+      "火之水晶x5",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 12860,
+    "name": "俄刻阿尼斯炸肉排",
+    "description": "将俄刻阿尼斯肉切片，再用少量的油煎炸而成。",
+    "icon": 24363,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "俄刻阿尼斯肉x3",
+      "高地小麦粉x1",
+      "橄榄油x1",
+      "卫月新薯x1",
+      "阿巴拉提亚岩盐x1",
+      "火之水晶x6",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 12867,
+    "name": "千层长颈驼焗野菜",
+    "description": "将长颈驼肉与野菜重叠摆放焗制而成。",
+    "icon": 24112,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "长颈驼肉x2",
+      "云海洋葱x2",
+      "西葫芦x1",
+      "高地小麦粉x1",
+      "新薯x1",
+      "牦牛奶油x1",
+      "火之水晶x4",
+      "水之水晶x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 12869,
+    "name": "千层长颈驼炖野菜",
+    "description": "将长颈驼肉与野菜放在一起炖制而成。",
+    "icon": 24107,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "长颈驼肉x2",
+      "云海洋葱x2",
+      "鲜汤宝x1",
+      "月桂x1",
+      "牦牛奶油x1",
+      "火之水晶x5",
+      "水之水晶x4"
+    ],
+    "tag": [
+      "肉类",
+      "汤品"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 19817,
+    "name": "牛肉串",
+    "description": "将犏牛的牛肩肉串成串烤制而成，是一种香气诱人的游牧民风味食物。",
+    "icon": 24351,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "犏牛肩肉x1",
+      "红辣椒x1",
+      "孜然x1",
+      "黑胡椒x1",
+      "海藻盐x1",
+      "火之水晶x4",
+      "水之水晶x4"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 19821,
+    "name": "鬼壳烧",
+    "description": "将带壳的虾竖着切开，浇淋酱汁烤制而成的美味。",
+    "icon": 24322,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "刺足龙虾x1",
+      "酱油x1",
+      "味淋酒x1",
+      "味噌x1",
+      "火之水晶x5",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 19822,
+    "name": "烤海螺",
+    "description": "将海螺带壳烤制而成的美味，是渔夫们常做的一种简单菜肴。",
+    "icon": 29112,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "蝾螺x1",
+      "酱油x1",
+      "味淋酒x1",
+      "火之水晶x4",
+      "水之水晶x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 19823,
+    "name": "炖黄尾鰤鱼头",
+    "description": "用黄尾鰤的鱼头和萝卜炖出来的美味菜肴。",
+    "icon": 24321,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "黄尾鰤x1",
+      "白萝卜x1",
+      "酱油x1",
+      "红玉海带x1",
+      "长颈骆姜x1",
+      "甜菜糖x1",
+      "火之水晶x5",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 19824,
+    "name": "清蒸赤点石斑鱼",
+    "description": "在蒸好的赤点石斑鱼浇上热油后就大功告成了。",
+    "icon": 24317,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "赤点石斑鱼x1",
+      "酱油x1",
+      "棉籽油x1",
+      "味淋酒x1",
+      "长颈骆姜x1",
+      "绿韭葱x1",
+      "火之水晶x6",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 19825,
+    "name": "浇汁菜蛙",
+    "description": "将菜蛙腿裹着面衣油炸，之后再浇上勾芡好的糖醋汁制成的美味。",
+    "icon": 24313,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "菜蛙x1",
+      "高原小麦粉x1",
+      "棉籽油x1",
+      "葛根x1",
+      "米醋x1",
+      "甜菜糖x1",
+      "火之水晶x4",
+      "水之水晶x4"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 19826,
+    "name": "天妇罗拼盘",
+    "description": "东方风味的油炸鱼贝、油炸蔬菜的拼盘。",
+    "icon": 24323,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "高原小麦粉x1",
+      "迦迦纳怪鸟蛋x1",
+      "棉籽油x1",
+      "斑节虾x1",
+      "白乌贼x1",
+      "莲藕x1",
+      "火之水晶x5",
+      "水之水晶x4"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 19827,
+    "name": "炖河鲷",
+    "description": "勾芡炖得的河鲷。",
+    "icon": 24312,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "河鲷x1",
+      "阿拉米格盐x1",
+      "棉籽油x1",
+      "葛根x1",
+      "日出甘蓝x1",
+      "多玛茄子x1",
+      "火之水晶x6",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 19828,
+    "name": "盐烤石楠嘉鱼",
+    "description": "撒上盐之后烤制的石楠嘉鱼。",
+    "icon": 24301,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "石楠嘉鱼x1",
+      "海藻盐x1",
+      "火之水晶x3",
+      "水之水晶x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 19830,
+    "name": "长颈骆焗菜",
+    "description": "将长颈骆肉与茄子煮炖的近东风味焗菜。",
+    "icon": 24112,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "多玛茄子x1",
+      "西葫芦x1",
+      "山芋x1",
+      "长颈骆肉x1",
+      "高原小麦粉x1",
+      "草原牛奶x1",
+      "火之水晶x6",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 19831,
+    "name": "煮杂菜",
+    "description": "将红角犀鸟的胸肉与各种根菜分别煮熟，再混合到一起的菜肴。",
+    "icon": 24160,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "红角犀鸟胸肉x1",
+      "竹笋x1",
+      "莲藕x1",
+      "香菇x1",
+      "基拉巴尼亚胡萝卜x1",
+      "酱油x1",
+      "火之水晶x4",
+      "水之水晶x4"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 19833,
+    "name": "油炸蟹肉饼",
+    "description": "将蟹肉和蔬菜混合炸至松脆的美味。",
+    "icon": 24308,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "高原小麦粉x1",
+      "木棉豆腐x1",
+      "藻屑蟹x1",
+      "山芋x1",
+      "云海洋葱x1",
+      "棉籽油x1",
+      "火之水晶x4",
+      "水之水晶x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 19839,
+    "name": "游牧民风味肉饼",
+    "description": "用蔬菜包裹犏牛的牛肩肉后炸制而成的食物。",
+    "icon": 24354,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "犏牛肩肉x1",
+      "高原小麦粉x1",
+      "日出甘蓝x1",
+      "云海洋葱x1",
+      "酱油x1",
+      "海藻盐x1",
+      "火之水晶x5",
+      "水之水晶x4"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 27853,
+    "name": "秧鸡烤肉",
+    "description": "岛屿秧鸡的网烤胸脯肉。",
+    "icon": 24352,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "秧鸡胸脯肉x1",
+      "油橄榄油x2",
+      "阿巴拉提亚岩盐x1",
+      "至日大蒜x1",
+      "火之水晶x6",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 27859,
+    "name": "盐烤白金鲷鱼",
+    "description": "用盐调味炙烤而成的白金鲷鱼。",
+    "icon": 24301,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "白金鲷鱼x3",
+      "阿巴拉提亚岩盐x3",
+      "火之水晶x6",
+      "水之水晶x6"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 27866,
+    "name": "香肠",
+    "description": "将绞肉塞进动物的肠衣中煮制而成的保存食物。",
+    "icon": 24365,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "力山羊肉x1",
+      "羊肠x1",
+      "野园甜菜糖x1",
+      "食盐x1",
+      "黑夜胡椒x1",
+      "火之水晶x7",
+      "水之水晶x6"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 27867,
+    "name": "烤力山羊",
+    "description": "用黑夜醋调味的烤山羊肉。",
+    "icon": 24361,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "力山羊肉x1",
+      "黑夜醋x1",
+      "黑夜胡椒x1",
+      "阿拉米格盐x1",
+      "黄油x1",
+      "黄新薯x1",
+      "火之水晶x7",
+      "水之水晶x6"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 27869,
+    "name": "菌蒸巨型水虎鱼",
+    "description": "将巨型水虎鱼与奶油菇用黄油焖制而成的菜肴。",
+    "icon": 24311,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "巨型水虎鱼x3",
+      "阿拉米格盐x1",
+      "奶油菇x2",
+      "发酵黄油x1",
+      "火之水晶x7",
+      "水之水晶x6"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 27879,
+    "name": "力山羊肉蓝带肉排",
+    "description": "将力山羊肉敲打至薄片，包裹奶酪后炸出的肉排。",
+    "icon": 24363,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "力山羊肉x1",
+      "山地小麦粉x1",
+      "奶油奶酪x1",
+      "小柠檬x1",
+      "油橄榄油x1",
+      "阿拉米格盐x1",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 27882,
+    "name": "生吃食用蚝",
+    "description": "将柠檬汁挤在食用蚝上做成的菜肴。",
+    "icon": 24316,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "食用蚝x3",
+      "小柠檬x2",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 36040,
+    "name": "猫魅风味岛萃烤串",
+    "description": "将桓娑鸟的胸肉和彩椒串在一起烧烤，据说是猫魅族的船员们将这道菜带到了萨维奈岛。",
+    "icon": 24351,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "桓娑鸟胸肉x1",
+      "紫苏油x1",
+      "萨维奈彩椒x2",
+      "奶油菇x1",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 36041,
+    "name": "炸帝王蟹饼",
+    "description": "将毛栗蟹的蟹肉混入小麦粉中搅拌均匀后炸制而成的美味佳肴。",
+    "icon": 24329,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "毛栗蟹x1",
+      "山地小麦粉x1",
+      "鹦鹉蛋x1",
+      "紫苏油x1",
+      "云海洋葱x2",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 36048,
+    "name": "桓娑鸟肉咖喱",
+    "description": "用各种各样的香料烹煮桓娑鸟胸肉做成的拉札罕特色菜。",
+    "icon": 24040,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "桓娑鸟胸肉x1",
+      "椰奶x1",
+      "古代肉豆蔻x2",
+      "山地小麦粉x1",
+      "发酵黄油x1",
+      "开心胡萝卜x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 400
+  },
+  {
+    "item": 36049,
+    "name": "茄子镶桓娑鸟肉",
+    "description": "在茄子里塞满香料和桓娑鸟肉，盖上番茄烤制完成的美味佳肴。",
+    "icon": 24162,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "桓娑鸟胸肉x1",
+      "多玛茄子x2",
+      "萨维奈彩椒x1",
+      "紫苏油x1",
+      "古代肉豆蔻x1",
+      "血番茄x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 36054,
+    "name": "亚考牛慕沙卡",
+    "description": "将亚考牛肉与茄子煮炖的近东风味焗菜。",
+    "icon": 24112,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "多玛茄子x1",
+      "亚考牛肩肉x1",
+      "巨人新薯x2",
+      "麝牛奶x1",
+      "山地小麦粉x1",
+      "黄瓜x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 36056,
+    "name": "盐烤浅滩鳕鱼",
+    "description": "撒上盐之后烤制的浅滩鳕鱼。",
+    "icon": 24315,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "浅滩鳕鱼x1",
+      "北洋食盐x3",
+      "小柠檬x3",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 36062,
+    "name": "厄尔庇斯佳肴",
+    "description": "使用精心炖煮的厄尔庇斯之鸟的胸肉制成的软烂适口的美味佳肴。",
+    "icon": 24356,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "厄尔庇斯之鸟胸肉x1",
+      "星外洋葱x2",
+      "裸麦粉x1",
+      "山地小麦粉x1",
+      "血番茄x1",
+      "北洋食盐x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 37358,
+    "name": "碳烤香鱼",
+    "description": "将穿成串的香鱼撒好盐放在炭火上烤，是个看似简单实际却很难掌握其精髓的料理。",
+    "icon": 53430,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "香鱼x3",
+      "北洋食盐x3",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 44073,
+    "name": "炖煮羊驼肉排",
+    "description": "用梅斯卡酒和柠檬汁炖煮的羊驼肉。",
+    "icon": 24355,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "梅斯卡料酒x1",
+      "羊驼的里脊肉x1",
+      "小柠檬x1",
+      "北洋食盐x2",
+      "婴猴薄荷x1",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 44079,
+    "name": "酱汁蘸虾",
+    "description": "将煮好的虾肉蘸着辣椒酱食用的菜肴。柠檬衬托出了菜肴整体的味道。",
+    "icon": 24336,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "乌托姆辣酱x1",
+      "星尘虾x1",
+      "天水x2",
+      "梅斯卡料酒x1",
+      "小柠檬x1",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 44074,
+    "name": "梅斯卡香煎沼泽鬼鱼肉",
+    "description": "毫不吝啬地用大量梅斯卡酒煎制的沼泽鬼鱼肉。",
+    "icon": 24352,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "梅斯卡料酒x1",
+      "沼泽鬼鱼的腿肉x2",
+      "高山食盐x1",
+      "紫苏油x2",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 44094,
+    "name": "盐烤奥阔鳟",
+    "description": "撒盐烤制的奥阔鳟。",
+    "icon": 24301,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "高山食盐x2",
+      "奥阔鳟x1",
+      "小柠檬x3",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 44084,
+    "name": "照烧枫糖鸡肉",
+    "description": "鸡肉用糖浆和盐调味后烤制而成的甜中带咸的菜肴。",
+    "icon": 24204,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "高级枫糖浆x1",
+      "高山食盐x1",
+      "裸麦粉x1",
+      "厄尔庇斯之鸟胸肉x2",
+      "发酵黄油x1",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 44092,
+    "name": "烤犎牛肉",
+    "description": "将烘烤后的犎牛肉切成薄片的菜肴。",
+    "icon": 24366,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "图拉尔玉米油x1",
+      "犎牛肩肉x1",
+      "亚斯拉尼蒜头x2",
+      "白胡椒x2",
+      "黑夜醋x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 44076,
+    "name": "番茄水煮鱼",
+    "description": "在油橄榄油炒好的海鲜中加入番茄以及梅斯卡酒炖煮而成的菜肴。据说源于渔夫们用卖剩下的鱼制作的鱼汤。",
+    "icon": 24335,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "梅斯卡料酒x1",
+      "钟情蚌x1",
+      "比阿纳可鲷鱼x1",
+      "风芹x1",
+      "乌托姆番茄x1",
+      "油橄榄油x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 44091,
+    "name": "犎牛牛排",
+    "description": "奢侈地使用大块犎牛牛肉，只进行简单调味做成的牛排。",
+    "icon": 24360,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "图拉尔玉米油x1",
+      "高山食盐x1",
+      "犎牛肩肉x1",
+      "龙息椒x1",
+      "亚斯拉尼蒜头x2",
+      "黑夜醋x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 400
+  },
+  {
+    "item": 44103,
+    "name": "酿柿子椒",
+    "description": "将非常碎的羊驼肉馅与其他食材搅拌在一起，填入柿子椒里烤制而成的菜肴。",
+    "icon": 24372,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "图拉尔玉米油x1",
+      "乌托姆辣酱x1",
+      "羊驼的里脊肉x1",
+      "柿子椒x2",
+      "星外洋葱x2",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 280
+  },
+  {
+    "item": 48130,
+    "name": "风干火腿",
+    "description": "整只猪后腿经过粗盐腌制后风干熟成的美食。",
+    "icon": 53514,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "高山食盐x2",
+      "梅斯卡料酒x1",
+      "红州黑猪肉x1",
+      "五加木木材x1",
+      "白胡椒x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 7570,
+    "name": "酒香蒸鲶鱼",
+    "description": "将整条巨鲶鱼配上料酒及香料蒸出的美味。",
+    "icon": 24317,
+    "recipeNotebookList": 1007,
+    "ingredient": [
+      "星八角x1",
+      "巨鲶鱼x1",
+      "料酒x1",
+      "新薯x1",
+      "枫糖x1",
+      "火之晶簇x2",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 7572,
+    "name": "香烤填鸭",
+    "description": "香喷喷的烤鸭肉，两种橙汁勾兑出出乎意料的味道。",
+    "icon": 24361,
+    "recipeNotebookList": 1007,
+    "ingredient": [
+      "填鸭胸肉x1",
+      "鲜血橙x1",
+      "拉诺西亚香橙x1",
+      "蜂蜜x1",
+      "黄油x1",
+      "新薯x1",
+      "火之晶簇x2",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 12865,
+    "name": "炖番茄",
+    "description": "鱼类炖番茄。",
+    "icon": 24117,
+    "recipeNotebookList": 1023,
+    "ingredient": [
+      "龙堡红辣椒x2",
+      "蓝螯虾x1",
+      "山峰蟹x1",
+      "石蚌x1",
+      "泽梅尔番茄x2",
+      "微光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 13742,
+    "name": "清蒸风神鱼",
+    "description": "将整条风神鱼配上料酒及香料蒸出的美味。",
+    "icon": 24317,
+    "recipeNotebookList": 1023,
+    "ingredient": [
+      "风神鱼x1",
+      "星八角x1",
+      "阿巴拉提亚天然水x1",
+      "香菜x1",
+      "阿巴拉提亚岩盐x1",
+      "微光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 14138,
+    "name": "洛夫坦山羊排",
+    "description": "将柔软的洛夫坦山羊里脊慢火烤制，味道极佳。",
+    "icon": 24355,
+    "recipeNotebookList": 1031,
+    "ingredient": [
+      "洛夫坦山羊里脊x2",
+      "龙堡红辣椒x1",
+      "发酵黄油x1",
+      "高级料酒x1",
+      "阿巴拉提亚岩盐x1",
+      "百里香x1",
+      "火之晶簇x3",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 14139,
+    "name": "油封牡蛎",
+    "description": "在库尔札斯牡蛎中倒入低温橄榄油，慢火煮制而成。",
+    "icon": 24320,
+    "recipeNotebookList": 1031,
+    "ingredient": [
+      "库尔札斯牡蛎x1",
+      "完熟橄榄油x1",
+      "月桂x1",
+      "迷迭香x1",
+      "高原芹x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 14140,
+    "name": "炖鮟鱇",
+    "description": "将整条祭司鱼直接下锅炖，不要留一点残渣。",
+    "icon": 24109,
+    "recipeNotebookList": 1031,
+    "ingredient": [
+      "祭司鱼x1",
+      "至日大蒜x1",
+      "云海洋葱x1",
+      "库尔札斯青葱x1",
+      "高地小麦粉x1",
+      "牦牛奶x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 16714,
+    "name": "蓝带肉排",
+    "description": "将洛夫坦山羊肉敲打至薄片，包裹奶酪后炸出的肉排。",
+    "icon": 24363,
+    "recipeNotebookList": 1031,
+    "ingredient": [
+      "洛夫坦山羊里脊x1",
+      "烟肉x1",
+      "岩石奶酪x1",
+      "高地小麦粉x1",
+      "完熟橄榄油x1",
+      "阿巴拉提亚岩盐x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 19818,
+    "name": "炖猪肉",
+    "description": "用稀有的红州黑猪肉长时间炖制而成的肉菜，入口即化。",
+    "icon": 24361,
+    "recipeNotebookList": 1039,
+    "ingredient": [
+      "红州黑猪肉x1",
+      "酱油x1",
+      "味淋酒x1",
+      "长颈骆姜x1",
+      "甜茴香x1",
+      "夜光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 21087,
+    "name": "王室鲑鱼排",
+    "description": "将王室鲑切成块，涂上黄油后精心煎烤。",
+    "icon": 24324,
+    "recipeNotebookList": 1039,
+    "ingredient": [
+      "王室鲑x1",
+      "高原小麦粉x1",
+      "发酵黄油x1",
+      "伊修加德柠檬x1",
+      "谢尔达莱嫩菠菜x1",
+      "粉红胡椒x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 22435,
+    "name": "犏牛肉排",
+    "description": "将犏牛的里脊肉充分烤制而成的肉排。",
+    "icon": 24360,
+    "recipeNotebookList": 1047,
+    "ingredient": [
+      "犏牛里脊肉x1",
+      "海藻盐x1",
+      "棉籽油x1",
+      "高级料酒x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 400
+  },
+  {
+    "item": 27884,
+    "name": "帝王鲑鱼排",
+    "description": "将帝王鲑裹上小麦粉，再用黄油煎烤而成。",
+    "icon": 24324,
+    "recipeNotebookList": 1055,
+    "ingredient": [
+      "帝王鲑x2",
+      "山地小麦粉x1",
+      "小柠檬x2",
+      "黑夜胡椒x2",
+      "发酵黄油x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 27891,
+    "name": "高级烤牛肉",
+    "description": "将高级犏牛肉用小火烤制而成。",
+    "icon": 24366,
+    "recipeNotebookList": 1055,
+    "ingredient": [
+      "高级犏牛肉x2",
+      "油橄榄油x1",
+      "欧薄荷x2",
+      "黑夜胡椒x2",
+      "甜茴香x1",
+      "基拉巴尼亚胡萝卜x2",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 400
+  },
+  {
+    "item": 27892,
+    "name": "高级清炖牛肉",
+    "description": "将高级犏牛肉与新薯用小火慢慢炖制而成。",
+    "icon": 24110,
+    "recipeNotebookList": 1055,
+    "ingredient": [
+      "高级犏牛肉x2",
+      "山地小麦粉x1",
+      "黄新薯x2",
+      "地下天然水x2",
+      "黑夜胡椒x2",
+      "基拉巴尼亚胡萝卜x2",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类",
+      "汤品"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 28720,
+    "name": "蒜炒贻贝",
+    "description": "将贻贝与大蒜用油橄榄油煸炒而成的美味菜肴。",
+    "icon": 24326,
+    "recipeNotebookList": 1055,
+    "ingredient": [
+      "贻贝x1",
+      "油橄榄油x1",
+      "卷叶芹x1",
+      "大蒜x1",
+      "闪光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 29497,
+    "name": "力山羊肉丸",
+    "description": "裹着山莓酱的肉丸。",
+    "icon": 24368,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "山莓x2",
+      "油橄榄油x1",
+      "黄新薯x2",
+      "力山羊肉x2",
+      "牦牛奶x1",
+      "阿拉米格盐x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 30481,
+    "name": "炸蟹饼",
+    "description": "将蓝蟹肉混入小麦粉中搅拌均匀后炸制而成的菜肴。",
+    "icon": 24329,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "蓝蟹x1",
+      "山地小麦粉x1",
+      "鹦鹉蛋x1",
+      "云海洋葱x1",
+      "雷鸣灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 30482,
+    "name": "辣酱炒全蟹",
+    "description": "用香醇浓郁的辣酱包裹住整只蓝蟹炒制而成的菜肴。",
+    "icon": 24328,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "蓝蟹x1",
+      "油橄榄油x1",
+      "血番茄x2",
+      "长颈骆姜x1",
+      "雷鸣灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 280
+  },
+  {
+    "item": 31901,
+    "name": "烟熏鸡肉",
+    "description": "将土鸡的腿肉经过漫长的熏制制作而成的菜肴。",
+    "icon": 24358,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "土鸡的腿肉x2",
+      "油橄榄油x2",
+      "小柠檬x1",
+      "黑夜胡椒x2",
+      "奶油菇x1",
+      "阿拉米格盐x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 36068,
+    "name": "奶汁牛肉",
+    "description": "高级牛肉经过精心炖煮之后制成的加雷马风味美食，最合适正在锻炼肌肉的你。",
+    "icon": 24369,
+    "recipeNotebookList": 1311,
+    "ingredient": [
+      "高级牛肉x1",
+      "天然香料x1",
+      "紫苏油x2",
+      "麝牛奶x1",
+      "巨人新薯x1",
+      "冰山莴苣x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 37282,
+    "name": "镶烤墨鱼",
+    "description": "用蔬菜和芝士塞满卡拉墨鱼的肚子后烤制而成的菜肴。",
+    "icon": 24331,
+    "recipeNotebookList": 1311,
+    "ingredient": [
+      "萨维奈卡拉墨鱼x1",
+      "紫苏油x2",
+      "加雷马奶酪x1",
+      "星外洋葱x1",
+      "血番茄x1",
+      "晓月灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 37283,
+    "name": "炸墨鱼圈",
+    "description": "将墨鱼圈蘸满裸麦粉之后用紫苏油高温炸制而成的菜肴。",
+    "icon": 24330,
+    "recipeNotebookList": 1311,
+    "ingredient": [
+      "萨维奈卡拉墨鱼x1",
+      "紫苏油x1",
+      "裸麦粉x2",
+      "卷叶芹x1",
+      "小柠檬x1",
+      "晓月灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 38266,
+    "name": "洛夫坦山羊臀肉排",
+    "description": "柔软鲜嫩的洛夫坦山羊臀肉排经过细致的炙烤后制成的美食。",
+    "icon": 24355,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "洛夫坦山羊臀肉x1",
+      "紫苏油x2",
+      "黑夜醋x1",
+      "萨维奈彩椒x1",
+      "黑夜胡椒x1",
+      "晓月灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 38930,
+    "name": "近东虾咖喱",
+    "description": "用各种各样的香料烹煮萨维奈岛特产的虾类做成的美味佳肴。",
+    "icon": 24333,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "近东虾x1",
+      "椰奶x2",
+      "紫苏油x1",
+      "血番茄x2",
+      "古代肉豆蔻x1",
+      "地鸣灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 400
+  },
+  {
+    "item": 39874,
+    "name": "窑烤盗龙腿",
+    "description": "将盗龙的腿肉用酸奶以及香辛料进行腌制后烤成的近东风格菜肴。",
+    "icon": 24358,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "高级孜然x1",
+      "北洋食盐x2",
+      "油橄榄油x1",
+      "麝牛奶x1",
+      "盗龙腿肉x1",
+      "地鸣灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 44175,
+    "name": "烤鸡",
+    "description": "用柠檬和大蒜调味后烤得恰到好处的无尾鸡。",
+    "icon": 24359,
+    "recipeNotebookList": 1495,
+    "ingredient": [
+      "无尾鸡x1",
+      "高山食盐x2",
+      "油橄榄油x1",
+      "亚斯拉尼蒜头x1",
+      "小柠檬x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 44177,
+    "name": "图莱尤拉烤犎牛肉",
+    "description": "将犎牛肩肉串起后精心炙烤而成的美味佳肴。",
+    "icon": 24371,
+    "recipeNotebookList": 1495,
+    "ingredient": [
+      "棕豆蔻x1",
+      "梅斯卡料酒x2",
+      "油橄榄油x1",
+      "犎牛肩肉x1",
+      "高山岩盐x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 400
+  },
+  {
+    "item": 44184,
+    "name": "汆烫龙虾",
+    "description": "以盐和柠檬调味的煮龙虾，干净简素的做法更显食材鲜美。",
+    "icon": 24306,
+    "recipeNotebookList": 1495,
+    "ingredient": [
+      "帝王龙虾x1",
+      "高山食盐x2",
+      "北洋食盐x1",
+      "亚克特尔天然水x1",
+      "小柠檬x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 44843,
+    "name": "香煎面拖旗鱼",
+    "description": "旗鱼裹上小麦面糊烹制成的美味佳肴。",
+    "icon": 24338,
+    "recipeNotebookList": 1495,
+    "ingredient": [
+      "云旗鱼x1",
+      "图拉尔玉米油x2",
+      "山地小麦粉x1",
+      "麝牛奶x1",
+      "小柠檬x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 46005,
+    "name": "彩椒犎牛柳",
+    "description": "犎牛肩肉、新薯加黑夜醋炒制而成的鲜辣家常美食。",
+    "icon": 24263,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "黄风铃椒x1",
+      "图拉尔玉米油x2",
+      "黑夜醋x1",
+      "犎牛肩肉x1",
+      "巨人新薯x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 300
+  },
+  {
+    "item": 46008,
+    "name": "鬃背兽肉饼",
+    "description": "将鬃背兽的里脊绞碎做成汉堡肉再以辣椒酱和大蒜调味烹制而成的美食。",
+    "icon": 24356,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "鬃背兽里脊肉x1",
+      "乌托姆辣酱x2",
+      "紫苏油x1",
+      "亚斯拉尼蒜头x1",
+      "星外洋葱x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 46009,
+    "name": "鬃背兽肉排",
+    "description": "将鬃背兽的里脊肉排撒上白胡椒烤制而成的美食。",
+    "icon": 24355,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "鬃背兽里脊肉x1",
+      "梅斯卡料酒x2",
+      "紫苏油x1",
+      "白胡椒x1",
+      "欧薄荷x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 350
+  },
+  {
+    "item": 46253,
+    "name": "椒麻鳗鱼",
+    "description": "将鳗鱼和新薯切成一口大小，再佐以萨维奈彩椒末炖煮后制成的佳肴。",
+    "icon": 24107,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "黄金鳗x1",
+      "高山食盐x2",
+      "紫苏油x1",
+      "萨维奈彩椒x2",
+      "巨人新薯x1",
+      "紫电灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 280
+  },
+  {
+    "item": 49247,
+    "name": "蛤蜊糕",
+    "description": "将圆蛤中开出来的贝肉碾成泥再和小麦粉混合后煎制成的美食。",
+    "icon": 24329,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "圆蛤x1",
+      "图拉尔玉米油x2",
+      "山地小麦粉x1",
+      "星外洋葱x1",
+      "厄尔庇斯之鸟蛋x1",
+      "紫电灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "肉类"
+    ],
+    "calories": 200
+  }
+]

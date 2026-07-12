@@ -1,0 +1,198 @@
+import { useRef } from 'react'
+import { Card, Row, Col, Tag, Button, Typography, Statistic, Space, Image, Badge } from 'antd'
+import {
+  ReloadOutlined,
+  FireOutlined,
+  ShareAltOutlined,
+} from '@ant-design/icons'
+import type { MealPlan } from '../types'
+import { GROUP_LABELS, getGroupLabel, kcalToLa } from '../constants'
+
+const { Text, Title } = Typography
+
+interface RecipeResultProps {
+  /** 今日菜谱方案 */
+  mealPlan: MealPlan
+  /** 重新生成回调 */
+  onRegenerate: () => void
+  /** 导出分享图回调 */
+  onExport: () => void
+  /** 是否正在导出 */
+  exporting?: boolean
+}
+
+/**
+ * 菜谱结果展示组件
+ * 展示四道菜 + 总热量 + 操作按钮
+ */
+function RecipeResult({
+  mealPlan,
+  onRegenerate,
+  onExport,
+  exporting = false,
+}: RecipeResultProps) {
+  const resultRef = useRef<HTMLDivElement>(null)
+
+  // 图标路径
+  const getIconPath = (icon: number) => `/data/icons/${icon}.jpg`
+
+  // 获取分类标签对象
+  const getRecipeTags = (tags: string[]) => {
+    const groupLabel = getGroupLabel(tags)
+    return {
+      groupLabel,
+      color: getTagColor(groupLabel),
+    }
+  }
+
+  // 标签颜色映射
+  const getTagColor = (label: string) => {
+    const colorMap: Record<string, string> = {
+      '主食': 'orange',
+      '配菜/肉类/沙拉/汤品': 'red',
+      '饮品': 'blue',
+      '零食/甜点': 'purple',
+    }
+    return colorMap[label] || 'default'
+  }
+
+  return (
+    <div ref={resultRef} style={{ marginTop: 32 }}>
+      {/* 总热量统计 */}
+      <div style={{ textAlign: 'center', marginBottom: 24 }}>
+        <Statistic
+          title="今日摄入总热量"
+          value={kcalToLa(mealPlan.totalCalories)}
+          suffix="拉"
+        styles={{
+          content: { color: 'var(--color-accent)', fontSize: 36, fontWeight: 'bold' },
+        }}
+          prefix={<FireOutlined />}
+        />
+        <div style={{ marginTop: 4 }}>
+          <Text type="secondary" style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>
+            🔸 约为成年拉拉菲尔族步行 {kcalToLa(mealPlan.totalCalories)} 星里所消耗的热量
+          </Text>
+        </div>
+      </div>
+
+      {/* 四道菜卡片网格 */}
+      <Row gutter={[16, 16]}>
+        {mealPlan.dishes.map((dish) => {
+          const { groupLabel, color } = getRecipeTags(dish.tag)
+          return (
+            <Col xs={24} sm={12} key={dish.item}>
+              <Badge.Ribbon
+                text={groupLabel}
+                color={color === 'orange' ? '#d4a843' : color}
+              >
+                <Card
+                  hoverable
+                  style={{
+                    background: 'var(--color-bg-card)',
+                    border: '1px solid var(--color-border)',
+                    height: '100%',
+                  }}
+                  styles={{
+                    body: {
+                      padding: 16,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                    },
+                  }}
+                >
+                  {/* 图标 */}
+                  <Image
+                    src={getIconPath(dish.item)}
+                    alt={dish.name}
+                    width={80}
+                    height={80}
+                    style={{
+                      borderRadius: 8,
+                      objectFit: 'cover',
+                      border: '2px solid var(--color-accent)',
+                    }}
+                    fallback="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect fill='%23333' width='80' height='80'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999' font-size='10'%3E暂无图标%3C/text%3E%3C/svg%3E"
+                    preview={false}
+                  />
+
+                  {/* 菜名 */}
+                  <Title level={5} style={{ margin: '12px 0 4px', color: 'var(--color-accent)' }}>
+                    {dish.name}
+                  </Title>
+
+                  {/* 描述 */}
+                  <Text
+                    type="secondary"
+                    style={{
+                      fontSize: 12,
+                      textAlign: 'center',
+                      display: 'block',
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    {dish.description}
+                  </Text>
+
+                  {/* 热量 + 标签 */}
+                  <Space style={{ marginTop: 8 }} size={4}>
+                    <Tag color="volcano" icon={<FireOutlined />}>
+                      {kcalToLa(dish.calories)} 拉
+                    </Tag>
+                    {dish.tag.map((t) => (
+                      <Tag key={t} style={{ fontSize: 11 }}>
+                        {GROUP_LABELS[t] || t}
+                      </Tag>
+                    ))}
+                  </Space>
+
+                  {/* 配料（精简） */}
+                  {dish.ingredient && dish.ingredient.length > 0 && (
+                    <Text
+                      type="secondary"
+                      style={{
+                        fontSize: 10,
+                        marginTop: 6,
+                        textAlign: 'center',
+                        color: 'var(--color-text-muted)',
+                      }}
+                    >
+                      食材: {dish.ingredient.slice(0, 3).join('、')}
+                      {dish.ingredient.length > 3 ? '...' : ''}
+                    </Text>
+                  )}
+                </Card>
+              </Badge.Ribbon>
+            </Col>
+          )
+        })}
+      </Row>
+
+      {/* 操作按钮 */}
+      <div style={{ textAlign: 'center', marginTop: 24 }}>
+        <Space size={16}>
+          <Button
+            type="primary"
+            icon={<ReloadOutlined />}
+            size="large"
+            onClick={onRegenerate}
+            style={{ fontWeight: 'bold' }}
+          >
+            重新生成
+          </Button>
+          <Button
+            icon={<ShareAltOutlined />}
+            size="large"
+            onClick={onExport}
+            loading={exporting}
+          >
+            分享
+          </Button>
+        </Space>
+      </div>
+    </div>
+  )
+}
+
+export default RecipeResult

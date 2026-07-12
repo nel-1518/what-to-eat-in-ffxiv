@@ -1,0 +1,902 @@
+[
+  {
+    "item": 4745,
+    "name": "橙汁",
+    "description": "鲜榨橙汁。",
+    "icon": 24401,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "拉诺西亚香橙x3",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 4726,
+    "name": "薄荷酸奶昔",
+    "description": "一种发酵乳饮料，加入了药草所以口感非常清爽。",
+    "icon": 24454,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "婴猴薄荷x1",
+      "山羊奶x1",
+      "火之碎晶x1",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 4746,
+    "name": "葡萄汁",
+    "description": "鲜榨低地葡萄汁。",
+    "icon": 24403,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "贵族葡萄x3",
+      "火之碎晶x2",
+      "水之碎晶x1"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 4749,
+    "name": "甘菊茶",
+    "description": "散发出甘菊清香的花茶。",
+    "icon": 24406,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "甘菊x1",
+      "蜂蜜x1",
+      "矿泉水x1",
+      "火之碎晶x2",
+      "水之碎晶x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 5
+  },
+  {
+    "item": 4747,
+    "name": "苹果汁",
+    "description": "鲜榨苹果汁。",
+    "icon": 24402,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "晶亮苹果x6",
+      "火之碎晶x5",
+      "水之碎晶x4"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 4727,
+    "name": "罗兰莓酸奶昔",
+    "description": "一种酸甜的发酵乳饮料，从近东城邦拉札罕流传而来。",
+    "icon": 24454,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "野牛奶x2",
+      "罗兰莓x2",
+      "火之碎晶x6",
+      "水之碎晶x5"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 4750,
+    "name": "香草茶",
+    "description": "乌尔达哈王宫风味混合健康茶，其中加入了香料和草药等材料。",
+    "icon": 24405,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "萨纳兰茶叶x1",
+      "生姜x1",
+      "丁香x1",
+      "桂皮x1",
+      "矿泉水x1",
+      "火之碎晶x6",
+      "水之碎晶x5"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 5
+  },
+  {
+    "item": 4748,
+    "name": "菠萝汁",
+    "description": "鲜榨菠萝汁。",
+    "icon": 24404,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "多刺菠萝x4",
+      "火之晶簇x1",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 7963,
+    "name": "冰镇果汁",
+    "description": "里面装了很多冰块，可以保证瓶装饮品在很长时间内都像冰一样凉爽。",
+    "icon": 53039,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "葡萄汁x1",
+      "橙汁x1",
+      "白银锭x1",
+      "食盐x1",
+      "冰之水晶x1"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 12842,
+    "name": "伊修加德奶茶",
+    "description": "库尔札斯茶叶与牦牛奶煮成的伊修加德风味奶茶。",
+    "icon": 24408,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "库尔札斯茶叶x3",
+      "牦牛奶x2",
+      "枫糖x1",
+      "火之水晶x4",
+      "水之水晶x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 12843,
+    "name": "冻雾鸡尾酒",
+    "description": "将冰冻云海香蕉和旧世界无花果混合制成的饮料。",
+    "icon": 24409,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "云海香蕉x2",
+      "旧世界无花果x2",
+      "牦牛奶x2",
+      "火之水晶x5",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 19807,
+    "name": "多玛茶",
+    "description": "加入了柿子干的多玛风味饮料。",
+    "icon": 24412,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "柿子x1",
+      "桂皮x1",
+      "长颈骆姜x1",
+      "石间清水x1",
+      "甜菜糖x1",
+      "火之水晶x5",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 60
+  },
+  {
+    "item": 19808,
+    "name": "枇杷果饮",
+    "description": "用枇杷榨成的果汁。",
+    "icon": 24401,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "枇杷x3",
+      "伊修加德柠檬x1",
+      "蜂蜜x1",
+      "火之水晶x3",
+      "水之水晶x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 19809,
+    "name": "荞麦茶",
+    "description": "将荞麦果实烘焙后进行煮沸制成的饮料。",
+    "icon": 24406,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "荞麦果实x3",
+      "基拉巴尼亚矿泉水x1",
+      "萨纳兰茶叶x1",
+      "火之水晶x3",
+      "水之水晶x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 5
+  },
+  {
+    "item": 27854,
+    "name": "紫胡萝卜果汁",
+    "description": "将紫胡萝卜磨碎后添加果汁制作而成的饮料。",
+    "icon": 24416,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "紫色胡萝卜x3",
+      "仙子苹果x6",
+      "火之水晶x6",
+      "水之水晶x5"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 27861,
+    "name": "血番茄果汁",
+    "description": "将血番茄榨汁后添加蜂蜜制作而成的饮料。",
+    "icon": 24405,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "黄金蜂蜜x1",
+      "血番茄x3",
+      "伊修加德柠檬x1",
+      "火之水晶x7",
+      "水之水晶x6"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 27872,
+    "name": "马萨拉奶茶",
+    "description": "用琥珀丁香调味过的奶茶。",
+    "icon": 24410,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "琥珀丁香x1",
+      "地下天然水x1",
+      "库尔札斯茶叶x1",
+      "草原牛奶x1",
+      "桂皮x1",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 27874,
+    "name": "浓缩奶油咖啡",
+    "description": "表面漂着一层发泡奶油的咖啡。",
+    "icon": 24407,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "咖啡豆x1",
+      "地下天然水x1",
+      "牦牛奶油x1",
+      "野园甜菜糖x1",
+      "桂皮x1",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 27880,
+    "name": "柠檬水",
+    "description": "用蜂蜜和柠檬果汁混合而成的饮料。",
+    "icon": 24404,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "小柠檬x1",
+      "黄金蜂蜜x2",
+      "地下天然水x1",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 80
+  },
+  {
+    "item": 33278,
+    "name": "滤挂式咖啡",
+    "description": "散发着醇厚香味的咖啡。",
+    "icon": 53403,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "咖啡豆x4",
+      "地下天然水x2",
+      "火之水晶x7",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 5
+  },
+  {
+    "item": 36039,
+    "name": "庵摩罗果酸奶昔",
+    "description": "使用庵摩罗果制成的甜美酸奶饮料。",
+    "icon": 24454,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "庵摩罗果x1",
+      "麝牛奶x1",
+      "棕榈糖x1",
+      "欧薄荷x2",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 36046,
+    "name": "开心汁",
+    "description": "将开心胡萝卜完完全全碾碎之后得到的胡萝卜汁。不知道什么原因，喝了一口就还想喝第二口。",
+    "icon": 24405,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "开心胡萝卜x2",
+      "冰山莴苣x2",
+      "地下天然水x1",
+      "欧薄荷x1",
+      "火之水晶x8",
+      "水之水晶x7"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 36052,
+    "name": "北洋酸奶",
+    "description": "使用萨雷安传统古典做法制作的发酵乳制品。",
+    "icon": 25056,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "棕榈糖x2",
+      "麝牛奶x2",
+      "天水x2",
+      "欧薄荷x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 36060,
+    "name": "高山茶",
+    "description": "使用了人称山之茶的高山茶。用这种有优秀药效的植物制成的香草茶。",
+    "icon": 24417,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "高山茶叶x2",
+      "天水x2",
+      "棕榈糖x1",
+      "桂皮x1",
+      "小柠檬x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 5
+  },
+  {
+    "item": 41108,
+    "name": "雪顶莫古泡泡冰",
+    "description": "甜美清爽的碳酸饮料，饮品表面飘浮着莫古力造型的冰品。",
+    "icon": 53474,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "电感蜜瓜x1",
+      "香草豆x1",
+      "奶油x1",
+      "棕榈糖x1",
+      "发泡水x1",
+      "巧克力球x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 44086,
+    "name": "奶油热巧克力",
+    "description": "在甜可可豆做成的热巧克力上面挤上奶油的饮品。",
+    "icon": 24407,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "泡沫奶油x1",
+      "甜可可豆x2",
+      "亚克特尔天然水x2",
+      "麝牛奶x1",
+      "棕榈糖x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 44102,
+    "name": "野生香蕉果昔",
+    "description": "以野生加提卡香蕉为基底制作的酸甜果昔。",
+    "icon": 24419,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "野生加提卡香蕉x2",
+      "拟鸟枝的果实x1",
+      "麝牛奶x2",
+      "亚克特尔天然水x1",
+      "棕榈糖x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 44097,
+    "name": "牧豆树豆汁",
+    "description": "以牧豆树豆子为基底，为了更好饮用加入了果汁的高营养饮品。",
+    "icon": 24409,
+    "recipeNotebookList": 0,
+    "ingredient": [
+      "牧豆树豆子x2",
+      "野生加提卡香蕉x1",
+      "图拉尔菠萝x1",
+      "圆扇刺梨x1",
+      "亚克特尔天然水x1",
+      "棕榈糖x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 41830,
+    "name": "巧克力马克杯",
+    "description": "装满了满满一杯香甜的热巧克力，能为人们带来舒心一刻的马克杯。",
+    "icon": 53477,
+    "recipeNotebookList": 1383,
+    "ingredient": [
+      "咖啡豆x2",
+      "棕榈糖x1",
+      "亚克特尔天然水x2",
+      "桂皮x1",
+      "火之水晶x8",
+      "水之水晶x8"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 9330,
+    "name": "浓缩康宝蓝",
+    "description": "这种咖啡里加的奶油几乎要和咖啡一样多的分量了。",
+    "icon": 24407,
+    "recipeNotebookList": 1015,
+    "ingredient": [
+      "烘焙咖啡豆x1",
+      "矿泉水x1",
+      "奶油x1",
+      "枫糖x1",
+      "桂皮x1",
+      "纯净水x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 100
+  },
+  {
+    "item": 12844,
+    "name": "热巧克力",
+    "description": "教皇厅御用清爽巧克力饮料。",
+    "icon": 24410,
+    "recipeNotebookList": 1023,
+    "ingredient": [
+      "皇家可可豆粉x1",
+      "牦牛奶x1",
+      "桦木糖浆x1",
+      "微光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x1"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 14134,
+    "name": "果香特饮",
+    "description": "在发酵苹果汁中加入各种香料，趁热喝下，唇齿留香。",
+    "icon": 24405,
+    "recipeNotebookList": 1031,
+    "ingredient": [
+      "金苹果x2",
+      "桂皮x1",
+      "香草豆x1",
+      "生姜x1",
+      "丁香x1",
+      "火之晶簇x3",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 150
+  },
+  {
+    "item": 16709,
+    "name": "苍穹蛋奶酒",
+    "description": "教皇厅御用的乳饮料，口感纯正，香甜可口。",
+    "icon": 24407,
+    "recipeNotebookList": 1031,
+    "ingredient": [
+      "苍穹鸡蛋x1",
+      "甜牛奶x1",
+      "奶油x1",
+      "桦木糖浆x1",
+      "桂皮x1",
+      "肉豆蔻x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 180
+  },
+  {
+    "item": 19810,
+    "name": "草原奶茶",
+    "description": "用犏牛奶烹煮茶饼制成的太阳神草原风味的香浓奶茶。",
+    "icon": 24410,
+    "recipeNotebookList": 1039,
+    "ingredient": [
+      "茶饼x1",
+      "草原牛奶x1",
+      "阿拉米格盐x1",
+      "毛栗子x1",
+      "夜光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 22436,
+    "name": "红莲特饮",
+    "description": "有着红莲般色泽的碳酸饮料。",
+    "icon": 24405,
+    "recipeNotebookList": 1047,
+    "ingredient": [
+      "粉红胡椒x1",
+      "长颈骆姜x1",
+      "孜然x1",
+      "葛根x1",
+      "枇杷x3",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 23187,
+    "name": "抹茶",
+    "description": "将茶叶碾碎成粉末状用热水冲泡的饮料。根据饮用方法不同，在远东之国有着多种不同的流派。",
+    "icon": 24414,
+    "recipeNotebookList": 1047,
+    "ingredient": [
+      "茶饼x1",
+      "石间清水x1",
+      "夜光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 5
+  },
+  {
+    "item": 24274,
+    "name": "路易波士红茶",
+    "description": "具有微甜味道的健康茶品。",
+    "icon": 24412,
+    "recipeNotebookList": 1047,
+    "ingredient": [
+      "路易波士红茶茶叶x1",
+      "石间清水x1",
+      "极光灵砂x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 5
+  },
+  {
+    "item": 27887,
+    "name": "仙子莓茶",
+    "description": "加入了大量仙子莓的红茶。",
+    "icon": 24415,
+    "recipeNotebookList": 1055,
+    "ingredient": [
+      "仙子莓x2",
+      "野园甜菜糖x1",
+      "欧薄荷x2",
+      "地下天然水x2",
+      "库尔札斯茶叶x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 50
+  },
+  {
+    "item": 29498,
+    "name": "莫尔斯",
+    "description": "用山莓发酵后表层清澈的液体制作而成的传统饮料。",
+    "icon": 24403,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "山莓x2",
+      "野园甜菜糖x1",
+      "小柠檬x2",
+      "地下天然水x2",
+      "桦木糖浆x1",
+      "婴猴薄荷x1",
+      "火之晶簇x2",
+      "水之晶簇x2"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 31902,
+    "name": "黄金菠萝汁",
+    "description": "用新鲜的黄金菠萝榨成的果汁。",
+    "icon": 24404,
+    "recipeNotebookList": 1063,
+    "ingredient": [
+      "黄金菠萝x2",
+      "黄金蜂蜜x2",
+      "小柠檬x1",
+      "琥珀丁香x2",
+      "地下天然水x1",
+      "牦牛奶x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 36071,
+    "name": "白桃汁",
+    "description": "使用白桃鲜榨的果汁。",
+    "icon": 24409,
+    "recipeNotebookList": 1311,
+    "ingredient": [
+      "白桃x1",
+      "天然香料x1",
+      "棕榈糖x2",
+      "无花果x1",
+      "艾布拉纳小扁豆x1",
+      "欧薄荷x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 36074,
+    "name": "萨维奈奶茶",
+    "description": "使用了高级桂皮进行调味的近东风味奶茶。",
+    "icon": 24410,
+    "recipeNotebookList": 1311,
+    "ingredient": [
+      "高级桂皮x1",
+      "天然香料x1",
+      "棕榈糖x2",
+      "高山茶叶x1",
+      "麝牛奶x1",
+      "欧薄荷x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 38262,
+    "name": "蜜瓜果汁",
+    "description": "鲜榨电感蜜瓜汁。",
+    "icon": 24418,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "电感蜜瓜x1",
+      "棕榈糖x2",
+      "野园甜菜糖x1",
+      "天水x1",
+      "古代肉豆蔻x1",
+      "晓月灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 39870,
+    "name": "火龙果果昔",
+    "description": "将捣碎的火龙果果实与其他多种果实以及鲜奶进行混合制成的饮品。",
+    "icon": 24409,
+    "recipeNotebookList": 1415,
+    "ingredient": [
+      "火龙果x1",
+      "椰奶x2",
+      "野园甜菜糖x1",
+      "麝牛奶x1",
+      "云海香蕉x1",
+      "地鸣灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 200
+  },
+  {
+    "item": 44179,
+    "name": "泡沫奶油肉桂咖啡",
+    "description": "泡沫绵密丰富的奶油佐以肉桂的清香，咖啡的苦与甜在此取得了恰到好处的平衡。",
+    "icon": 24407,
+    "recipeNotebookList": 1495,
+    "ingredient": [
+      "野咖啡豆x1",
+      "泡沫奶油x2",
+      "棕榈糖x1",
+      "亚克特尔天然水x1",
+      "桂皮x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 120
+  },
+  {
+    "item": 46001,
+    "name": "珍珠奶茶",
+    "description": "因甘甜的口味与珍珠的嚼劲而大受欢迎的饮料。曾在永护塔的年轻人中掀起过一轮珍珠奶茶热。",
+    "icon": 24425,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "木薯x1",
+      "泡沫奶油x2",
+      "棕榈糖x1",
+      "麝牛奶x1",
+      "高山茶叶x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 250
+  },
+  {
+    "item": 46002,
+    "name": "甜马黛茶",
+    "description": "使用最高级马黛茶制作的甜味饮料。因其缓解疲劳的功效，广受时常长途跋涉的商人们好评。",
+    "icon": 24412,
+    "recipeNotebookList": 1519,
+    "ingredient": [
+      "最高级马黛茶x1",
+      "高级枫糖浆x2",
+      "椰奶x1",
+      "亚克特尔天然水x1",
+      "小柠檬x1",
+      "黄金灵砂x1",
+      "火之晶簇x3",
+      "水之晶簇x3"
+    ],
+    "tag": [
+      "饮品"
+    ],
+    "calories": 60
+  }
+]
