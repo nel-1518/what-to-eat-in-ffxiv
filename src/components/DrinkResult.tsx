@@ -1,4 +1,4 @@
-import { Card, Tag, Button, Typography, Space, Image, Badge } from 'antd'
+import { Card, Tag, Button, Typography, Space, Image, Badge, Tooltip } from 'antd'
 import {
   ReloadOutlined,
   LinkOutlined,
@@ -109,19 +109,22 @@ function DrinkResult({
 
               {/* 配料 */}
               {drink.ingredient && drink.ingredient.length > 0 && (
-                <Text
-                  type="secondary"
-                  style={{
-                    fontSize: 12,
-                    marginTop: 4,
-                    textAlign: 'center',
-                    color: 'var(--color-text-muted)',
-                    lineHeight: 1.4,
-                    opacity: 0.65,
-                  }}
-                >
-                  食材: {drink.ingredient.join('、')}
-                </Text>
+                <Tooltip title={`食材: ${drink.ingredient.join('、')}`}>
+                  <Text
+                    type="secondary"
+                    style={{
+                      fontSize: 12,
+                      marginTop: 4,
+                      textAlign: 'center',
+                      color: 'var(--color-text-muted)',
+                      lineHeight: 1.4,
+                      opacity: 0.65,
+                    }}
+                  >
+                    食材: {drink.ingredient.slice(0, 3).join('、')}
+                    {drink.ingredient.length > 3 ? '...' : ''}
+                  </Text>
+                </Tooltip>
               )}
             </Card>
           </Badge.Ribbon>

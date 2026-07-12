@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from 'react'
-import { Card, Tag, Button, Typography, Statistic, Space, Image, Badge } from 'antd'
+import { Card, Tag, Button, Typography, Statistic, Space, Image, Badge, Tooltip } from 'antd'
 import {
   ReloadOutlined,
   FireOutlined,
@@ -88,7 +88,7 @@ function RecipeResult({
   return (
     <div ref={resultRef} style={{ marginTop: 32 }}>
       {/* 总热量统计 */}
-      <div style={{ textAlign: 'center', marginBottom: 24 }}>
+      <div style={{ textAlign: 'center', marginBottom: 20 }}>
         <Statistic
           title="今日摄入总热量"
           value={kcalToLa(mealPlan.totalCalories)}
@@ -98,7 +98,7 @@ function RecipeResult({
         }}
           prefix={<FireOutlined />}
         />
-        <div style={{ marginTop: 4 }}>
+        <div>
           <Text type="secondary" style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>
             🔸 约为成年拉拉菲尔族步行 {kcalToLa(mealPlan.totalCalories)} 星里所消耗的热量
           </Text>
@@ -186,19 +186,22 @@ function RecipeResult({
 
                   {/* 配料（完整显示所有食材） */}
                   {dish.ingredient && dish.ingredient.length > 0 && (
-                    <Text
-                      type="secondary"
-                      style={{
-                        fontSize: 12,
-                        marginTop: 4,
-                        textAlign: 'center',
-                        color: 'var(--color-text-muted)',
-                        lineHeight: 1.4,
-                        opacity: 0.65,
-                      }}
-                    >
-                      食材: {dish.ingredient.join('、')}
-                    </Text>
+                    <Tooltip title={`食材: ${dish.ingredient.join('、')}`}>
+                      <Text
+                        type="secondary"
+                        style={{
+                          fontSize: 12,
+                          marginTop: 4,
+                          textAlign: 'center',
+                          color: 'var(--color-text-muted)',
+                          lineHeight: 1.4,
+                          opacity: 0.65,
+                        }}
+                      >
+                        食材: {dish.ingredient.slice(0, 3).join('、')}
+                        {dish.ingredient.length > 3 ? '...' : ''}
+                      </Text>
+                    </Tooltip>
                   )}
                 </Card>
               </Badge.Ribbon>
