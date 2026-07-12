@@ -1,7 +1,6 @@
 import { Card, Tag, Button, Typography, Space, Image, Badge } from 'antd'
 import {
   ReloadOutlined,
-  ShareAltOutlined,
   LinkOutlined,
 } from '@ant-design/icons'
 import type { RecipeItem } from '../types'
@@ -15,10 +14,6 @@ interface DrinkResultProps {
   drink: RecipeItem
   /** 重新生成回调 */
   onRegenerate: () => void
-  /** 导出分享图回调 */
-  onExport: () => void
-  /** 是否正在导出 */
-  exporting?: boolean
 }
 
 /**
@@ -28,8 +23,6 @@ interface DrinkResultProps {
 function DrinkResult({
   drink,
   onRegenerate,
-  onExport,
-  exporting = false,
 }: DrinkResultProps) {
   const groupLabel = getGroupLabel(drink.tag)
   const tagColor = (() => {
@@ -147,15 +140,7 @@ function DrinkResult({
           >
             再来一杯
           </Button>
-          <Button
-            icon={<ShareAltOutlined />}
-            size="large"
-            onClick={onExport}
-            loading={exporting}
-            style={{ fontWeight: 'bold' }}
-          >
-            分享结果
-          </Button>
+
         </Space>
       </div>
     </div>

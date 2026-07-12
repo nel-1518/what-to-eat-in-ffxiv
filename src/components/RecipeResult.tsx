@@ -17,10 +17,6 @@ interface RecipeResultProps {
   mealPlan: MealPlan
   /** 重新生成回调 */
   onRegenerate: () => void
-  /** 导出分享图回调 */
-  onExport: () => void
-  /** 是否正在导出 */
-  exporting?: boolean
 }
 
 /**
@@ -30,8 +26,6 @@ interface RecipeResultProps {
 function RecipeResult({
   mealPlan,
   onRegenerate,
-  onExport,
-  exporting = false,
 }: RecipeResultProps) {
   const resultRef = useRef<HTMLDivElement>(null)
   const [cardMinHeight, setCardMinHeight] = useState(0)
@@ -226,14 +220,7 @@ function RecipeResult({
           >
             重新生成
           </Button>
-          <Button
-            icon={<ShareAltOutlined />}
-            size="large"
-            onClick={onExport}
-            loading={exporting}
-          >
-            分享结果
-          </Button>
+
         </Space>
       </div>
     </div>

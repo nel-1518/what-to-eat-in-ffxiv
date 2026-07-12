@@ -10,7 +10,6 @@ import DrinkSpin from './components/DrinkSpin'
 import DrinkResult from './components/DrinkResult'
 import NavBar from './components/NavBar'
 import { generateMealPlan, fetchProgressTips, generateDrinkPlan, fetchAllDrinkNames } from './utils/generateRecipe'
-import { exportShareImage } from './utils/exportImage'
 import { useTheme } from './hooks/useTheme'
 import { assetUrl } from './utils/path'
 import type { MealPlan, ProgressTipGroup, RecipeItem } from './types'
@@ -26,7 +25,6 @@ function App() {
   const [pageState, setPageState] = useState<PageState>('initial')
   const [mealPlan, setMealPlan] = useState<MealPlan | null>(null)
   const [showAd, setShowAd] = useState(false)
-  const [exporting, setExporting] = useState(false)
   const [tipGroups, setTipGroups] = useState<ProgressTipGroup[]>([])
 
   // 用来强制重新挂载 ProgressView，使进度条重新开始
@@ -98,28 +96,6 @@ function App() {
     handleGenerate()
   }, [handleGenerate])
 
-  // 导出分享图
-  const handleExport = useCallback(async () => {
-    const element = document.getElementById('recipe-result')
-    if (!element || !mealPlan) {
-      message.warning('暂无菜谱可导出')
-      return
-    }
-    setExporting(true)
-    try {
-      await exportShareImage(
-        element,
-        mealPlan.totalCalories,
-        mealPlan.dishes.map((d) => d.name),
-      )
-      message.success('分享图已保存')
-    } catch {
-      message.error('导出失败，请重试')
-    } finally {
-      setExporting(false)
-    }
-  }, [mealPlan])
-
   // 加载饮品名称列表
   useEffect(() => {
     fetchAllDrinkNames().then(setAllDrinkNames)
@@ -153,28 +129,6 @@ function App() {
   const handleDrinkRegenerate = useCallback(() => {
     handleDrinkGenerate()
   }, [handleDrinkGenerate])
-
-  // 导出饮品分享图
-  const handleDrinkExport = useCallback(async () => {
-    const element = document.getElementById('recipe-result')
-    if (!element || !selectedDrink) {
-      message.warning('暂无饮品可导出')
-      return
-    }
-    setExporting(true)
-    try {
-      await exportShareImage(
-        element,
-        selectedDrink.calories,
-        [selectedDrink.name],
-      )
-      message.success('分享图已保存')
-    } catch {
-      message.error('导出失败，请重试')
-    } finally {
-      setExporting(false)
-    }
-  }, [selectedDrink])
 
   const isDark = resolvedTheme === 'dark'
 
@@ -258,8 +212,6 @@ function App() {
                   <RecipeResult
                     mealPlan={mealPlan}
                     onRegenerate={handleRegenerate}
-                    onExport={handleExport}
-                    exporting={exporting}
                   />
                 </div>
               </>
@@ -322,8 +274,6 @@ function App() {
                   <DrinkResult
                     drink={selectedDrink}
                     onRegenerate={handleDrinkRegenerate}
-                    onExport={handleDrinkExport}
-                    exporting={exporting}
                   />
                 </div>
               </>
