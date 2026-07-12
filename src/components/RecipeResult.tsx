@@ -3,7 +3,6 @@ import { Card, Tag, Button, Typography, Statistic, Space, Image, Badge } from 'a
 import {
   ReloadOutlined,
   FireOutlined,
-  ShareAltOutlined,
   LinkOutlined,
 } from '@ant-design/icons'
 import type { MealPlan } from '../types'
