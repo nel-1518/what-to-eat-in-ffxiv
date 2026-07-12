@@ -1,5 +1,5 @@
-import { useRef } from 'react'
-import { Card, Row, Col, Tag, Button, Typography, Statistic, Space, Image, Badge } from 'antd'
+import { useRef, useState, useEffect } from 'react'
+import { Card, Tag, Button, Typography, Statistic, Space, Image, Badge } from 'antd'
 import {
   ReloadOutlined,
   FireOutlined,
@@ -32,6 +32,40 @@ function RecipeResult({
   exporting = false,
 }: RecipeResultProps) {
   const resultRef = useRef<HTMLDivElement>(null)
+  const [cardMinHeight, setCardMinHeight] = useState(0)
+
+  // 同步所有卡片的最小高度（取最高卡片）
+  useEffect(() => {
+    if (!resultRef.current) return
+
+    const updateHeights = () => {
+      const container = resultRef.current
+      if (!container) return
+      const cards = container.querySelectorAll<HTMLElement>('.recipe-grid > div')
+      if (cards.length === 0) return
+      const max = Array.from(cards).reduce(
+        (maxH, el) => Math.max(maxH, el.getBoundingClientRect().height),
+        0,
+      )
+      setCardMinHeight(max)
+    }
+
+    // 等待 DOM 渲染完成后再测量
+    const raf = requestAnimationFrame(() => {
+      updateHeights()
+    })
+
+    // 窗口/内容变化时重新测量
+    const ro = new ResizeObserver(() => {
+      requestAnimationFrame(updateHeights)
+    })
+    ro.observe(resultRef.current)
+
+    return () => {
+      cancelAnimationFrame(raf)
+      ro.disconnect()
+    }
+  }, [mealPlan])
 
   // 图标路径
   const getIconPath = (icon: number) => `/data/icons/${icon}.jpg`
@@ -49,7 +83,7 @@ function RecipeResult({
   const getTagColor = (label: string) => {
     const colorMap: Record<string, string> = {
       '主食': 'orange',
-      '配菜/肉类/沙拉/汤品': 'red',
+      '配菜': 'red',
       '饮品': 'blue',
       '零食/甜点': 'purple',
     }
@@ -63,7 +97,7 @@ function RecipeResult({
         <Statistic
           title="今日摄入总热量"
           value={kcalToLa(mealPlan.totalCalories)}
-          suffix="拉"
+          suffix="La"
         styles={{
           content: { color: 'var(--color-accent)', fontSize: 36, fontWeight: 'bold' },
         }}
@@ -77,28 +111,30 @@ function RecipeResult({
       </div>
 
       {/* 四道菜卡片网格 */}
-      <Row gutter={[16, 16]}>
+      <div className="recipe-grid">
         {mealPlan.dishes.map((dish) => {
           const { groupLabel, color } = getRecipeTags(dish.tag)
           return (
-            <Col xs={24} sm={12} key={dish.item}>
+            <div key={dish.item}>
               <Badge.Ribbon
                 text={groupLabel}
                 color={color === 'orange' ? '#d4a843' : color}
               >
                 <Card
-                  hoverable
                   style={{
                     background: 'var(--color-bg-card)',
                     border: '1px solid var(--color-border)',
                     height: '100%',
+                    minHeight: cardMinHeight || undefined,
+                    cursor: 'default',
                   }}
                   styles={{
                     body: {
-                      padding: 16,
+                      padding: 30,
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
+                      height: '100%',
                     },
                   }}
                 >
@@ -118,7 +154,7 @@ function RecipeResult({
                   />
 
                   {/* 菜名 */}
-                  <Title level={5} style={{ margin: '12px 0 4px', color: 'var(--color-accent)' }}>
+                  <Title level={5} style={{ margin: '8px 0 4px', color: 'var(--color-accent)', fontSize: 18 }}>
                     {dish.name}
                   </Title>
 
@@ -126,7 +162,7 @@ function RecipeResult({
                   <Text
                     type="secondary"
                     style={{
-                      fontSize: 12,
+                      fontSize: 15,
                       textAlign: 'center',
                       display: 'block',
                       lineHeight: 1.4,
@@ -138,36 +174,37 @@ function RecipeResult({
                   {/* 热量 + 标签 */}
                   <Space style={{ marginTop: 8 }} size={4}>
                     <Tag color="volcano" icon={<FireOutlined />}>
-                      {kcalToLa(dish.calories)} 拉
+                      约 {kcalToLa(dish.calories)} La
                     </Tag>
                     {dish.tag.map((t) => (
-                      <Tag key={t} style={{ fontSize: 11 }}>
+                      <Tag key={t} style={{ fontSize: 14 }}>
                         {GROUP_LABELS[t] || t}
                       </Tag>
                     ))}
                   </Space>
 
-                  {/* 配料（精简） */}
+                  {/* 配料（完整显示所有食材） */}
                   {dish.ingredient && dish.ingredient.length > 0 && (
                     <Text
                       type="secondary"
                       style={{
-                        fontSize: 10,
-                        marginTop: 6,
+                        fontSize: 12,
+                        marginTop: 4,
                         textAlign: 'center',
                         color: 'var(--color-text-muted)',
+                        lineHeight: 1.4,
+                        opacity: 0.65,
                       }}
                     >
-                      食材: {dish.ingredient.slice(0, 3).join('、')}
-                      {dish.ingredient.length > 3 ? '...' : ''}
+                      食材: {dish.ingredient.join('、')}
                     </Text>
                   )}
                 </Card>
               </Badge.Ribbon>
-            </Col>
+            </div>
           )
         })}
-      </Row>
+      </div>
 
       {/* 操作按钮 */}
       <div style={{ textAlign: 'center', marginTop: 24 }}>
@@ -187,7 +224,7 @@ function RecipeResult({
             onClick={onExport}
             loading={exporting}
           >
-            分享
+            分享结果
           </Button>
         </Space>
       </div>

@@ -285,6 +285,19 @@
 
 /* ==================== 响应式 ==================== */
 
+/* 菜谱卡片网格 */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  grid-auto-rows: 1fr;
+}
+
+/* 让 Badge.Ribbon 包裹层撑满 grid 单元格，确保内部卡片高度一致 */
+.recipe-grid .ant-ribbon-wrapper {
+  height: 100%;
+}
+
 @media (max-width: 600px) {
   .app-container {
     padding: 70px 12px 20px;
@@ -305,6 +318,10 @@
     top: 8px;
     right: 8px;
     padding: 3px;
+  }
+
+  .recipe-grid {
+    grid-template-columns: 1fr;
   }
 }
 

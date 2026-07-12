@@ -3,7 +3,7 @@ import type { RecipeItem } from './types'
 /** 四组分类映射：每组包含的标签列表 */
 export const MEAL_GROUPS: { label: string; tags: string[] }[] = [
   { label: '主食', tags: ['主食'] },
-  { label: '配菜/肉类/沙拉/汤品', tags: ['配菜', '肉类', '沙拉', '汤品'] },
+  { label: '配菜', tags: ['配菜', '肉类', '沙拉', '汤品'] },
   { label: '饮品', tags: ['饮品'] },
   { label: '零食/甜点', tags: ['零食', '甜点'] },
 ]
