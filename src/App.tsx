@@ -173,7 +173,13 @@ function App() {
                     🍽️ 今天吃什么
                   </Title>
                   <Typography.Text type="secondary" className="app-subtitle">
-                    — 光之战士家今天的饭 —
+                    光之战士家今天的饭
+                  </Typography.Text>
+                  <Typography.Text className="app-quote">
+                    请大家吃饭库啵？
+                    <br />
+                    居然有这种事，莫古一点也不知道库啵。
+                    <span className="quote-attribution">莫古艾克</span>
                   </Typography.Text>
                 </div>
                 <div className="app-button-area">
@@ -232,7 +238,13 @@ function App() {
                     🥤 今天喝什么
                   </Title>
                   <Typography.Text type="secondary" className="app-subtitle">
-                    — 调制人生 改变饮料 —
+                    调制人生 改变饮料
+                  </Typography.Text>
+                  <Typography.Text className="app-quote">
+                    来，请用！
+                    <br />
+                    这是阿姆姐姐托我们发给大家的潘趣软饮！
+                    <span className="quote-attribution">索莉娜</span>
                   </Typography.Text>
                 </div>
                 <div className="app-button-area">
