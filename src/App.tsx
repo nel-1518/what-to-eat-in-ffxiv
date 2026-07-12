@@ -12,6 +12,7 @@ import NavBar from './components/NavBar'
 import { generateMealPlan, fetchProgressTips, generateDrinkPlan, fetchAllDrinkNames } from './utils/generateRecipe'
 import { exportShareImage } from './utils/exportImage'
 import { useTheme } from './hooks/useTheme'
+import { assetUrl } from './utils/path'
 import type { MealPlan, ProgressTipGroup, RecipeItem } from './types'
 import './App.css'
 
@@ -60,7 +61,7 @@ function App() {
       // 预加载菜谱图标，结果页展示时直接走缓存
       plan.dishes.forEach((dish) => {
         const img = new Image()
-        img.src = `/data/icons/${dish.item}.jpg`
+        img.src = assetUrl(`/data/icons/${dish.item}.jpg`)
       })
     }).catch(() => {
       // 生成失败由进度完成时的回调处理
@@ -135,7 +136,7 @@ function App() {
         setSelectedDrink(drink)
         // 预加载饮品图标
         const img = new Image()
-        img.src = `/data/icons/${drink.item}.jpg`
+        img.src = assetUrl(`/data/icons/${drink.item}.jpg`)
       }
     }).catch(() => {
       message.error('饮品数据加载失败，请重试')

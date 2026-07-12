@@ -6,6 +6,7 @@ import {
 } from '@ant-design/icons'
 import type { RecipeItem } from '../types'
 import { GROUP_LABELS, getGroupLabel } from '../constants'
+import { assetUrl } from '../utils/path'
 
 const { Text, Title } = Typography
 
@@ -67,7 +68,7 @@ function DrinkResult({
             >
               {/* 图标 */}
               <Image
-                src={`/data/icons/${drink.item}.jpg`}
+                src={assetUrl(`/data/icons/${drink.item}.jpg`)}
                 alt={drink.name}
                 width={80}
                 height={80}

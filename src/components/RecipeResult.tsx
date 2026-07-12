@@ -8,6 +8,7 @@ import {
 } from '@ant-design/icons'
 import type { MealPlan } from '../types'
 import { GROUP_LABELS, getGroupLabel, kcalToLa } from '../constants'
+import { assetUrl } from '../utils/path'
 
 const { Text, Title } = Typography
 
@@ -69,7 +70,7 @@ function RecipeResult({
   }, [mealPlan])
 
   // 图标路径
-  const getIconPath = (icon: number) => `/data/icons/${icon}.jpg`
+  const getIconPath = (icon: number) => assetUrl(`/data/icons/${icon}.jpg`)
 
   // 获取分类标签对象
   const getRecipeTags = (tags: string[]) => {

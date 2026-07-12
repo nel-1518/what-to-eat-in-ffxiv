@@ -1,9 +1,10 @@
 import type { RecipeItem, MealPlan, ProgressTipGroup } from '../types'
 import { MEAL_GROUPS } from '../constants'
+import { assetUrl } from './path'
 
 /** 按标签名加载 JSON 数据 */
 async function fetchRecipesByTag(tag: string): Promise<RecipeItem[]> {
-  const response = await fetch(`/data/by-tag/${tag}.json`)
+  const response = await fetch(assetUrl(`/data/by-tag/${tag}.json`))
   if (!response.ok) {
     throw new Error(`加载 ${tag} 数据失败: ${response.status}`)
   }
@@ -12,7 +13,7 @@ async function fetchRecipesByTag(tag: string): Promise<RecipeItem[]> {
 
 /** 加载进度提示数据 */
 export async function fetchProgressTips(): Promise<ProgressTipGroup[]> {
-  const response = await fetch('/data/progress-tips.json')
+  const response = await fetch(assetUrl('/data/progress-tips.json'))
   if (!response.ok) {
     // 如果加载失败，返回默认提示
     return [
