@@ -73,3 +73,26 @@ export async function generateMealPlan(): Promise<MealPlan> {
     timestamp: Date.now(),
   }
 }
+
+/**
+ * 加载所有饮品名称（供老虎机动画滚动使用）
+ */
+export async function fetchAllDrinkNames(): Promise<string[]> {
+  const data = await fetchRecipesByTag('饮品')
+  return data.map((item) => item.name)
+}
+
+/**
+ * 生成今日饮品方案
+ * 从饮品数据中随机选 1 项
+ */
+export async function generateDrinkPlan(): Promise<MealPlan> {
+  const data = await fetchRecipesByTag('饮品')
+  const drink = data[Math.floor(Math.random() * data.length)]
+
+  return {
+    dishes: [drink],
+    totalCalories: drink?.calories || 0,
+    timestamp: Date.now(),
+  }
+}

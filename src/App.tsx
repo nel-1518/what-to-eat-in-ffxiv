@@ -6,11 +6,13 @@ import zhCN from 'antd/locale/zh_CN'
 import ProgressView from './components/ProgressModal'
 import AdModal from './components/AdModal'
 import RecipeResult from './components/RecipeResult'
-import ThemeSwitcher from './components/ThemeSwitcher'
-import { generateMealPlan, fetchProgressTips } from './utils/generateRecipe'
+import DrinkSpin from './components/DrinkSpin'
+import DrinkResult from './components/DrinkResult'
+import NavBar from './components/NavBar'
+import { generateMealPlan, fetchProgressTips, generateDrinkPlan, fetchAllDrinkNames } from './utils/generateRecipe'
 import { exportShareImage } from './utils/exportImage'
 import { useTheme } from './hooks/useTheme'
-import type { MealPlan, ProgressTipGroup } from './types'
+import type { MealPlan, ProgressTipGroup, RecipeItem } from './types'
 import './App.css'
 
 const { Title } = Typography
@@ -19,11 +21,17 @@ const { Title } = Typography
 type PageState = 'initial' | 'generating' | 'result'
 
 function App() {
+  const [activeTab, setActiveTab] = useState<'eat' | 'drink'>('eat')
   const [pageState, setPageState] = useState<PageState>('initial')
   const [mealPlan, setMealPlan] = useState<MealPlan | null>(null)
   const [showAd, setShowAd] = useState(false)
   const [exporting, setExporting] = useState(false)
   const [tipGroups, setTipGroups] = useState<ProgressTipGroup[]>([])
+
+  // 喝什么状态
+  const [drinkState, setDrinkState] = useState<'initial' | 'spinning' | 'result'>('initial')
+  const [selectedDrink, setSelectedDrink] = useState<RecipeItem | null>(null)
+  const [allDrinkNames, setAllDrinkNames] = useState<string[]>([])
 
   // 主题
   const { mode, setMode, resolvedTheme } = useTheme()
@@ -107,6 +115,62 @@ function App() {
     }
   }, [mealPlan])
 
+  // 加载饮品名称列表
+  useEffect(() => {
+    fetchAllDrinkNames().then(setAllDrinkNames)
+  }, [])
+
+  // 开始生成饮品：立即异步生成 + 进入 spinning 动画页
+  const handleDrinkGenerate = useCallback(() => {
+    setDrinkState('spinning')
+    setSelectedDrink(null)
+
+    generateDrinkPlan().then((plan) => {
+      const drink = plan.dishes[0]
+      if (drink) {
+        setSelectedDrink(drink)
+        // 预加载饮品图标
+        const img = new Image()
+        img.src = `/data/icons/${drink.item}.jpg`
+      }
+    }).catch(() => {
+      message.error('饮品数据加载失败，请重试')
+      setDrinkState('initial')
+    })
+  }, [])
+
+  // 饮品老虎机动画完成
+  const handleDrinkSpinComplete = useCallback(() => {
+    setDrinkState('result')
+  }, [])
+
+  // 重新生成饮品
+  const handleDrinkRegenerate = useCallback(() => {
+    handleDrinkGenerate()
+  }, [handleDrinkGenerate])
+
+  // 导出饮品分享图
+  const handleDrinkExport = useCallback(async () => {
+    const element = document.getElementById('recipe-result')
+    if (!element || !selectedDrink) {
+      message.warning('暂无饮品可导出')
+      return
+    }
+    setExporting(true)
+    try {
+      await exportShareImage(
+        element,
+        selectedDrink.calories,
+        [selectedDrink.name],
+      )
+      message.success('分享图已保存')
+    } catch {
+      message.error('导出失败，请重试')
+    } finally {
+      setExporting(false)
+    }
+  }, [selectedDrink])
+
   const isDark = resolvedTheme === 'dark'
 
   return (
@@ -128,65 +192,139 @@ function App() {
         },
       }}
     >
+    {/* 顶部导航栏 */}
+    <NavBar
+      activeTab={activeTab}
+      onTabChange={setActiveTab}
+      themeMode={mode}
+      resolvedTheme={resolvedTheme}
+      onThemeChange={setMode}
+    />
+
     <div className="app-container">
-      {/* 主题切换按钮（固定右上角） */}
-      <ThemeSwitcher mode={mode} resolvedTheme={resolvedTheme} onChange={setMode} />
+      {/* 吃什么页面 */}
+      {activeTab === 'eat' && (
+        <>
+          {/* 初始页：标题 + 按钮 */}
+          <div className={`page-transition ${pageState === 'initial' ? 'page-enter' : 'page-exit'}`}>
+            {pageState === 'initial' && (
+              <>
+                <div className="app-header">
+                  <Title level={1} className="app-title">
+                    🍽️ 今天吃什么
+                  </Title>
+                  <Typography.Text type="secondary" className="app-subtitle">
+                    — 光之战士家今天的饭 —
+                  </Typography.Text>
+                </div>
+                <div className="app-button-area">
+                  <Button
+                    type="primary"
+                    size="large"
+                    icon={<CoffeeOutlined />}
+                    onClick={handleGenerate}
+                    className="main-button"
+                  >
+                    是啊，吃什么
+                  </Button>
+                </div>
+              </>
+            )}
+          </div>
 
-      {/* 初始页：标题 + 按钮 */}
-      <div className={`page-transition ${pageState === 'initial' ? 'page-enter' : 'page-exit'}`}>
-        {pageState === 'initial' && (
-          <>
-            <div className="app-header">
-              <Title level={1} className="app-title">
-                🍽️ 今天吃什么
-              </Title>
-              <Typography.Text type="secondary" className="app-subtitle">
-                — 光之战士家今天的饭 —
-              </Typography.Text>
-            </div>
-            <div className="app-button-area">
-              <Button
-                type="primary"
-                size="large"
-                icon={<CoffeeOutlined />}
-                onClick={handleGenerate}
-                className="main-button"
-              >
-                是啊，吃什么
-              </Button>
-            </div>
-          </>
-        )}
-      </div>
-
-      {/* 进度页：全屏进度条 */}
-      <div className={`page-transition ${pageState === 'generating' ? 'page-enter' : 'page-exit'}`}>
-        {pageState === 'generating' && (
-          <ProgressView
-            visible
-            tipGroups={tipGroups}
-            onComplete={handleProgressComplete}
-            onFail={handleProgressFail}
-          />
-        )}
-      </div>
-
-      {/* 结果页：菜谱 + 历史 */}
-      <div className={`page-transition ${pageState === 'result' ? 'page-enter' : 'page-exit'}`}>
-        {pageState === 'result' && mealPlan && (
-          <>
-            <div id="recipe-result">
-              <RecipeResult
-                mealPlan={mealPlan}
-                onRegenerate={handleRegenerate}
-                onExport={handleExport}
-                exporting={exporting}
+          {/* 进度页：全屏进度条 */}
+          <div className={`page-transition ${pageState === 'generating' ? 'page-enter' : 'page-exit'}`}>
+            {pageState === 'generating' && (
+              <ProgressView
+                visible
+                tipGroups={tipGroups}
+                onComplete={handleProgressComplete}
+                onFail={handleProgressFail}
               />
-            </div>
+            )}
+          </div>
 
-          </>
-        )}
-      </div>
+          {/* 结果页：菜谱 + 历史 */}
+          <div className={`page-transition ${pageState === 'result' ? 'page-enter' : 'page-exit'}`}>
+            {pageState === 'result' && mealPlan && (
+              <>
+                <div id="recipe-result">
+                  <RecipeResult
+                    mealPlan={mealPlan}
+                    onRegenerate={handleRegenerate}
+                    onExport={handleExport}
+                    exporting={exporting}
+                  />
+                </div>
+              </>
+            )}
+          </div>
+        </>
+      )}
+
+      {/* 喝什么页面 */}
+      {activeTab === 'drink' && (
+        <>
+          {/* 初始页：标题 + 按钮 */}
+          <div className={`page-transition ${drinkState === 'initial' ? 'page-enter' : 'page-exit'}`}>
+            {drinkState === 'initial' && (
+              <>
+                <div className="app-header">
+                  <Title level={1} className="app-title">
+                    🥤 今天喝什么
+                  </Title>
+                  <Typography.Text type="secondary" className="app-subtitle">
+                    — 调制人生 改变饮料 —
+                  </Typography.Text>
+                </div>
+                <div className="app-button-area">
+                  <Button
+                    type="primary"
+                    size="large"
+                    icon={<CoffeeOutlined />}
+                    onClick={handleDrinkGenerate}
+                    className="main-button"
+                  >
+                    是啊，喝什么
+                  </Button>
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* 老虎机动画页 */}
+          <div className={`page-transition ${drinkState === 'spinning' ? 'page-enter' : 'page-exit'}`}>
+            {drinkState === 'spinning' && allDrinkNames.length > 0 && selectedDrink && (
+              <DrinkSpin
+                allNames={allDrinkNames}
+                selectedName={selectedDrink.name}
+                onComplete={handleDrinkSpinComplete}
+              />
+            )}
+            {drinkState === 'spinning' && !selectedDrink && (
+              <div className="drink-spin-container">
+                <Title level={1} className="app-title">🥤 调制中...</Title>
+              </div>
+            )}
+          </div>
+
+          {/* 结果页：饮品卡片 */}
+          <div className={`page-transition ${drinkState === 'result' ? 'page-enter' : 'page-exit'}`}>
+            {drinkState === 'result' && selectedDrink && (
+              <>
+                <div id="recipe-result">
+                  <DrinkResult
+                    drink={selectedDrink}
+                    onRegenerate={handleDrinkRegenerate}
+                    onExport={handleDrinkExport}
+                    exporting={exporting}
+                  />
+                </div>
+              </>
+            )}
+          </div>
+        </>
+      )}
 
       {/* 广告弹窗 */}
       <AdModal

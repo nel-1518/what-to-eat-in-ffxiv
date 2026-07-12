@@ -3,7 +3,7 @@
 .app-container {
   max-width: 860px;
   margin: 0 auto;
-  padding: 60px 20px 40px;
+  padding: 60px 20px 60px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,25 +16,86 @@
   justify-content: flex-start;
 }
 
+/* ==================== 顶部导航栏 ==================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.navbar-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 0 16px;
+  position: relative;
+}
+
+.navbar-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar-actions {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.navbar-tab:hover {
+  color: var(--color-text-primary);
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.navbar-tab.active {
+  color: var(--color-accent);
+  background: rgba(162, 71, 48, 0.12);
+  font-weight: 600;
+}
+
 /* ==================== 主题切换按钮 ==================== */
 
 .theme-switcher {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 100;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
 .theme-switcher-btn {
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border: none;
   background: transparent;
   color: var(--color-text-secondary);
-  font-size: 18px;
+  font-size: 17px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -50,7 +111,7 @@
 
 .theme-switcher-dropdown {
   position: absolute;
-  top: 48px;
+  top: 44px;
   right: 0;
   min-width: 140px;
   background: var(--color-bg-card);
@@ -314,10 +375,13 @@
     font-size: 18px !important;
   }
 
-  .theme-switcher {
-    top: 8px;
-    right: 8px;
-    padding: 3px;
+  .navbar-inner {
+    padding: 0 8px;
+  }
+
+  .navbar-tab {
+    padding: 8px 12px;
+    font-size: 14px;
   }
 
   .recipe-grid {
@@ -327,4 +391,15 @@
 
 .app-button-area {
   padding: 40px 0;
+}
+
+/* ==================== 老虎机动画 ==================== */
+
+.drink-spin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  width: 100%;
 }

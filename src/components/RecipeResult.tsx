@@ -4,6 +4,7 @@ import {
   ReloadOutlined,
   FireOutlined,
   ShareAltOutlined,
+  LinkOutlined,
 } from '@ant-design/icons'
 import type { MealPlan } from '../types'
 import { GROUP_LABELS, getGroupLabel, kcalToLa } from '../constants'
@@ -181,6 +182,12 @@ function RecipeResult({
                         {GROUP_LABELS[t] || t}
                       </Tag>
                     ))}
+                    <Tag
+                      style={{ fontSize: 14, cursor: 'pointer' }}
+                      onClick={() => window.open(`https://ff14.huijiwiki.com/wiki/物品:${encodeURIComponent(dish.name)}`, '_blank')}
+                    >
+                      <LinkOutlined /> WIKI
+                    </Tag>
                   </Space>
 
                   {/* 配料（完整显示所有食材） */}
