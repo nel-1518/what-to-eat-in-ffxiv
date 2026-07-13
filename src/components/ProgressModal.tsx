@@ -172,7 +172,7 @@ function ProgressView({
                     animation: 'pulse 1s infinite',
                   }}
                 >
-                  观看广告 重新生成
+                  观看广告获得重新生成机会
                 </Button>
               </div>
             )}

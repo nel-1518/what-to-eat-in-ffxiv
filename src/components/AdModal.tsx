@@ -1,4 +1,5 @@
 import { Modal, Typography } from 'antd'
+import { assetUrl } from '../utils/path'
 
 const { Text } = Typography
 
@@ -124,7 +125,7 @@ function AdModal({ visible, onRealClose }: AdModalProps) {
         textAlign: 'center',
       }}>
         <img
-          src="/evercold.jpg"
+          src={assetUrl('/evercold.jpg')}
           alt=""
           style={{
             width: '100%',
