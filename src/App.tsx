@@ -1,7 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import { Button, Typography, ConfigProvider, theme } from 'antd'
 import { message } from 'antd'
-import { CoffeeOutlined } from '@ant-design/icons'
 import zhCN from 'antd/locale/zh_CN'
 import ProgressView from './components/ProgressModal'
 import AdModal from './components/AdModal'
@@ -170,7 +169,11 @@ function App() {
               <>
                 <div className="app-header">
                   <Title level={1} className="app-title">
-                    🍽️ 今天吃什么
+                    <span
+                      className="app-title-icon"
+                      style={{ maskImage: `url(${assetUrl('/reaction_emoji_category_05.svg')})`, WebkitMaskImage: `url(${assetUrl('/reaction_emoji_category_05.svg')})` }}
+                    />
+                    今天吃什么
                   </Title>
                   <Typography.Text type="secondary" className="app-subtitle">
                     光之战士家今天的饭
@@ -186,7 +189,7 @@ function App() {
                   <Button
                     type="primary"
                     size="large"
-                    icon={<CoffeeOutlined />}
+                    icon={<span className="main-btn-icon" style={{ maskImage: `url(${assetUrl('/CommandChange.svg')})`, WebkitMaskImage: `url(${assetUrl('/CommandChange.svg')})` }} />}
                     onClick={handleGenerate}
                     className="main-button"
                   >
@@ -235,7 +238,11 @@ function App() {
               <>
                 <div className="app-header">
                   <Title level={1} className="app-title">
-                    🥤 今天喝什么
+                    <span
+                      className="app-title-icon"
+                      style={{ maskImage: `url(${assetUrl('/reaction_emoji_category_05.svg')})`, WebkitMaskImage: `url(${assetUrl('/reaction_emoji_category_05.svg')})` }}
+                    />
+                    今天喝什么
                   </Title>
                   <Typography.Text type="secondary" className="app-subtitle">
                     调制饮料 改变人生
@@ -251,7 +258,7 @@ function App() {
                   <Button
                     type="primary"
                     size="large"
-                    icon={<CoffeeOutlined />}
+                    icon={<span className="main-btn-icon" style={{ maskImage: `url(${assetUrl('/CommandChange.svg')})`, WebkitMaskImage: `url(${assetUrl('/CommandChange.svg')})` }} />}
                     onClick={handleDrinkGenerate}
                     className="main-button"
                   >
