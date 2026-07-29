@@ -287,7 +287,7 @@
 }
 
 .app-quote::before {
-  content: '\201C';
+  content: "\201C";
   position: absolute;
   top: -6px;
   left: 12px;
@@ -297,12 +297,12 @@
   opacity: 0.35;
   font-style: normal;
   font-weight: 700;
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: Georgia, "Times New Roman", serif;
   pointer-events: none;
 }
 
 .app-quote::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -328,7 +328,7 @@
 }
 
 .app-quote .quote-attribution::before {
-  content: '\2015\2015\00a0';
+  content: "\2015\2015\00a0";
 }
 
 /* ==================== 主按钮 ==================== */
@@ -511,6 +511,56 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 40vh;
+  min-height: 60vh;
   width: 100%;
+  gap: 4px;
+}
+
+/* 单列容器 */
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* 单列窗口 */
+.slot-reel-window {
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 25%,
+    black 75%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 25%,
+    black 75%,
+    transparent 100%
+  );
+}
+
+/* 滚动轨道 */
+.slot-reel-track {
+  will-change: transform;
+  contain: layout style paint;
+}
+
+/* 每一项 */
+.slot-reel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 2.4em;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 8px;
+  text-align: center;
+  transition: color 0.3s ease;
 }

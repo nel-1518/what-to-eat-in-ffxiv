@@ -18,13 +18,13 @@ function NavBar({ activeTab, onTabChange, themeMode, resolvedTheme, onThemeChang
             className={`navbar-tab${activeTab === 'eat' ? ' active' : ''}`}
             onClick={() => onTabChange('eat')}
           >
-            🍽️ 吃什么
+            吃什么
           </button>
           <button
             className={`navbar-tab${activeTab === 'drink' ? ' active' : ''}`}
             onClick={() => onTabChange('drink')}
           >
-            🥤 喝什么
+            喝什么
           </button>
         </div>
         <div className="navbar-actions">

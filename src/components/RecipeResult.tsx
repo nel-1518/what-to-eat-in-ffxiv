@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect } from 'react'
 import { Card, Tag, Button, Typography, Statistic, Space, Image, Badge, Tooltip } from 'antd'
 import {
-  ReloadOutlined,
   FireOutlined,
   LinkOutlined,
 } from '@ant-design/icons'
@@ -215,7 +214,7 @@ function RecipeResult({
         <Space size={16}>
           <Button
             type="primary"
-            icon={<ReloadOutlined />}
+            icon={<span style={{ display: 'inline-block', width: '1em', height: '1em', background: 'currentColor', mask: `url(${assetUrl('/CommandChange.svg')}) center/contain no-repeat`, WebkitMask: `url(${assetUrl('/CommandChange.svg')}) center/contain no-repeat`, verticalAlign: '-0.125em' }} />}
             size="large"
             onClick={onRegenerate}
             style={{ fontWeight: 'bold' }}

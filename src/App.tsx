@@ -189,7 +189,6 @@ function App() {
                   <Button
                     type="primary"
                     size="large"
-                    icon={<span className="main-btn-icon" style={{ maskImage: `url(${assetUrl('/CommandChange.svg')})`, WebkitMaskImage: `url(${assetUrl('/CommandChange.svg')})` }} />}
                     onClick={handleGenerate}
                     className="main-button"
                   >
@@ -258,7 +257,6 @@ function App() {
                   <Button
                     type="primary"
                     size="large"
-                    icon={<span className="main-btn-icon" style={{ maskImage: `url(${assetUrl('/CommandChange.svg')})`, WebkitMaskImage: `url(${assetUrl('/CommandChange.svg')})` }} />}
                     onClick={handleDrinkGenerate}
                     className="main-button"
                   >
@@ -269,7 +267,7 @@ function App() {
             )}
           </div>
 
-          {/* 老虎机动画页 */}
+          {/* 动画页 */}
           <div className={`page-transition ${drinkState === 'spinning' ? 'page-enter' : 'page-exit'}`}>
             {drinkState === 'spinning' && allDrinkNames.length > 0 && selectedDrink && (
               <DrinkSpin

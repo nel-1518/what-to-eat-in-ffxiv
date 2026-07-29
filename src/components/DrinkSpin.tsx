@@ -1,113 +1,183 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
-import { Typography } from 'antd'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 
-const { Title } = Typography
+// ==================== 常量 ====================
 
-const SPIN_DURATION = 10000 // 10 秒滚动
-const SETTLE_DURATION = 2000 // 原地定格 2 秒
+const ITEM_HEIGHT = 90
+const VISIBLE_COUNT = 2
+const WINDOW_HEIGHT = ITEM_HEIGHT * VISIBLE_COUNT
 
-interface DrinkSpinProps {
-  /** 所有饮品名称列表（供滚动显示） */
-  allNames: string[]
-  /** 最终选中的饮品名称 */
-  selectedName: string
-  /** 动画完成回调 */
-  onComplete: () => void
+const SPIN_DURATION = 5000
+const DECEL_MS = 3000
+const SETTLE_MS = 1500
+
+/** 每列列表份数 */
+const LIST_COPIES = 5
+
+// ==================== 工具 ====================
+
+function buildReelList(names: string[], copies: number): string[] {
+  const result: string[] = []
+  for (let i = 0; i < copies; i++) {
+    result.push(...names)
+  }
+  return result
 }
 
 /**
- * 文字滚动组件
- * - spinning 阶段：快速切换随机饮品名，逐渐变慢
- * - settled 阶段：定格在选中项，2 秒后回调
+ * 从 startIndex 向后找 target；找不到则回绕到开头继续找，
+ * 返回「虚拟索引」（可能 >= list.length，表示跨轮次的位置）
  */
-function DrinkSpin({ allNames, selectedName, onComplete }: DrinkSpinProps) {
-  const [displayName, setDisplayName] = useState('')
-  const [phase, setPhase] = useState<'spinning' | 'settled'>('spinning')
-  const [showSubtitle, setShowSubtitle] = useState(false)
-  const timeoutsRef = useRef<ReturnType<typeof setTimeout>[]>([])
+function findNextVirtualIndex(list: string[], target: string, startIndex: number): number {
+  const len = list.length
+  for (let i = startIndex; i < len; i++) {
+    if (list[i] === target) return i
+  }
+  for (let i = 0; i < startIndex; i++) {
+    if (list[i] === target) return i + len
+  }
+  return startIndex + len
+}
 
-  const clearTimeouts = useCallback(() => {
-    timeoutsRef.current.forEach(clearTimeout)
-    timeoutsRef.current = []
+// ==================== 单个滚轮 ====================
+
+interface SlotReelProps {
+  list: string[]
+  selectedName: string
+  delay: number
+  /** 快转 + 减速的总时长 (ms) */
+  spinDuration: number
+  onStopped: () => void
+}
+
+/**
+ * 三次缓出曲线：1 - (1 - x)^3
+ * 起始速度快，末尾速度趋近于 0
+ */
+function easeOutCubic(x: number): number {
+  return 1 - Math.pow(1 - x, 3)
+}
+
+function SlotReel({ list, selectedName, delay, spinDuration, onStopped }: SlotReelProps) {
+  const trackRef = useRef<HTMLDivElement>(null)
+  const [phase, setPhase] = useState<'idle' | 'spinning' | 'stopped'>('idle')
+  const rafRef = useRef(0)
+  const startTimeRef = useRef(0)
+  const stoppedRef = useRef(false)
+  const phaseRef = useRef<'idle' | 'spinning' | 'stopped'>('idle')
+
+  // 将 transform 写入 DOM，完全跳过 React
+  const setTrackY = useCallback((y: number) => {
+    if (trackRef.current) {
+      trackRef.current.style.transform = `translateY(${y}px)`
+    }
   }, [])
 
   useEffect(() => {
-    const startTime = Date.now()
+    const total = DECEL_MS + spinDuration
+    const start = performance.now() + delay
+    let active = true
+    let from = 0
+    let to = 0
 
-    // 近 10 次显示过的名称，避免重复
-    const recentHistory: string[] = []
+    const animate = (now: number) => {
+      if (!active) return
 
-    // 从 allNames 中随机选一项，排除 recentHistory 中近 10 次的名称
-    const pickUnique = (): string => {
-      const pool = allNames.filter((name) => !recentHistory.includes(name))
-      const source = pool.length > 0 ? pool : allNames
-      return source[Math.floor(Math.random() * source.length)]
-    }
-
-    // 根据经过时间计算当前间隔（二次缓出：保持快速更久，最后急剧降速）
-    const getInterval = (elapsed: number) => {
-      const t = Math.min(elapsed / SPIN_DURATION, 1)
-      // 陡峭二次曲线：初始 ~50ms，中部 ~237ms，结尾 ~800ms
-      return 50 + 750 * (t * t)
-    }
-
-    const scheduleNext = () => {
-      const elapsed = Date.now() - startTime
-
-      if (elapsed >= SPIN_DURATION) {
-        // 滚动结束，定格显示选中项
-        setDisplayName(selectedName)
-        setPhase('settled')
-        // 先停留一会儿再弹出副标题
-        const subtitleT = setTimeout(() => {
-          setShowSubtitle(true)
-        }, 1000)
-        timeoutsRef.current.push(subtitleT)
-        // 定格 2 秒后回调
-        const t = setTimeout(() => {
-          onComplete()
-        }, SETTLE_DURATION)
-        timeoutsRef.current.push(t)
+      if (now < start) {
+        rafRef.current = requestAnimationFrame(animate)
         return
       }
 
-      // 随机选一个名字显示，保证近 10 次不重复
-      const randomName = pickUnique()
-      setDisplayName(randomName)
-      recentHistory.push(randomName)
-      if (recentHistory.length > 10) {
-        recentHistory.shift()
+      if (phaseRef.current === 'idle') {
+        phaseRef.current = 'spinning'
+        setPhase('spinning')
+        startTimeRef.current = now
+
+        // 反向滚动，目标停在 selectedName 居中位置
+        const targetIdx = findNextVirtualIndex(list, selectedName, 0)
+        from = -((list.length - VISIBLE_COUNT) * ITEM_HEIGHT * 0.5)
+        to = -(targetIdx * ITEM_HEIGHT) + (WINDOW_HEIGHT - ITEM_HEIGHT) / 2
       }
 
-      const interval = getInterval(elapsed)
-      const t = setTimeout(scheduleNext, interval)
-      timeoutsRef.current.push(t)
+      const elapsed = now - startTimeRef.current
+      const progress = Math.min(elapsed / total, 1)
+      const eased = easeOutCubic(progress)
+
+      setTrackY(from + (to - from) * eased)
+
+      if (progress < 1) {
+        rafRef.current = requestAnimationFrame(animate)
+      } else {
+        // 停稳
+        setTrackY(to)
+        phaseRef.current = 'stopped'
+        setPhase('stopped')
+        if (!stoppedRef.current) {
+          stoppedRef.current = true
+          onStopped()
+        }
+      }
     }
 
-    scheduleNext()
+    rafRef.current = requestAnimationFrame(animate)
+    return () => { active = false; cancelAnimationFrame(rafRef.current) }
+  }, [list, selectedName, delay, spinDuration, onStopped, setTrackY])
 
+  return (
+    <div className="slot-reel-window" style={{ height: WINDOW_HEIGHT }}>
+      <div className="slot-reel-track" ref={trackRef}>
+        {list.map((name, i) => (
+          <div
+            key={i}
+            className={`slot-reel-item${name === selectedName && phase === 'stopped' ? ' slot-reel-item--hit' : ''}`}
+            style={{ height: ITEM_HEIGHT }}
+          >
+            {name}
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+// ==================== 主组件 ====================
+
+interface DrinkSpinProps {
+  allNames: string[]
+  selectedName: string
+  onComplete: () => void
+}
+
+function DrinkSpin({ allNames, selectedName, onComplete }: DrinkSpinProps) {
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const list = useMemo(
+    () => buildReelList(allNames, LIST_COPIES),
+    [allNames]
+  )
+
+  const handleStopped = useCallback(() => {
+    timerRef.current = setTimeout(() => {
+      onComplete()
+    }, SETTLE_MS)
+  }, [onComplete])
+
+  useEffect(() => {
     return () => {
-      clearTimeouts()
+      if (timerRef.current) clearTimeout(timerRef.current)
     }
-  }, [allNames, selectedName, onComplete, clearTimeouts])
+  }, [])
 
   return (
     <div className="drink-spin-container">
-      <Title
-        level={1}
-        className="app-title"
-        style={{
-          transition: phase === 'settled' ? 'color 0.3s ease' : 'none',
-          color: phase === 'settled' ? 'var(--color-accent)' : undefined,
-        }}
-      >
-        {displayName || '🥤'}
-      </Title>
-      {showSubtitle && (
-        <Typography.Text type="secondary" className="app-subtitle" style={{ marginTop: 8 }}>
-          就这杯了！
-        </Typography.Text>
-      )}
+      <div className="slot-machine">
+        <SlotReel
+          list={list}
+          selectedName={selectedName}
+          delay={0}
+          spinDuration={SPIN_DURATION}
+          onStopped={handleStopped}
+        />
+      </div>
     </div>
   )
 }

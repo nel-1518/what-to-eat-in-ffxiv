@@ -1,6 +1,5 @@
 import { Card, Tag, Button, Typography, Space, Image, Badge, Tooltip } from 'antd'
 import {
-  ReloadOutlined,
   LinkOutlined,
 } from '@ant-design/icons'
 import type { RecipeItem } from '../types'
@@ -136,7 +135,7 @@ function DrinkResult({
         <Space size={16}>
           <Button
             type="primary"
-            icon={<ReloadOutlined />}
+            icon={<span style={{ display: 'inline-block', width: '1em', height: '1em', background: 'currentColor', mask: `url(${assetUrl('/CommandChange.svg')}) center/contain no-repeat`, WebkitMask: `url(${assetUrl('/CommandChange.svg')}) center/contain no-repeat`, verticalAlign: '-0.125em' }} />}
             size="large"
             onClick={onRegenerate}
             style={{ fontWeight: 'bold' }}
