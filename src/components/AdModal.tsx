@@ -12,17 +12,19 @@ interface AdModalProps {
 
 /**
  * "一刀999"垃圾广告弹窗组件
- * 多个关闭按钮，只有最隐蔽的才能关闭
+ * 点击任意位置都会关闭弹窗；只有左上角极小的 ✕ 关闭时不跳转，
+ * 其余位置（含右上角虚假关闭按钮）在关闭的同时打开广告页。
  */
 function AdModal({ visible, onRealClose }: AdModalProps) {
-  // 重置状态
+  // 左上角真关闭：阻止冒泡，只关闭不跳转
   const handleRealClose = (e: React.MouseEvent) => {
     e.stopPropagation()
     onRealClose()
   }
 
-  // 点击弹窗任意位置打开广告页（左上角关闭按钮已阻止冒泡）
+  // 点击弹窗任意位置：关闭弹窗并打开广告页（左上角关闭按钮已阻止冒泡，不触发此逻辑）
   const handleBodyClick = () => {
+    onRealClose()
     window.open('https://actff1.web.sdo.com/project/20260425evercold/', '_blank')
   }
 

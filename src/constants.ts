@@ -1,8 +1,8 @@
 import type { RecipeItem } from './types'
 
 /** 点餐语义搜索接口地址（how-much-history 后端） */
-// export const ORDER_API_BASE: string = 'https://ffxiv-api.neeeel.com'
-export const ORDER_API_BASE: string = 'http://localhost:5174'
+export const ORDER_API_BASE: string = 'https://ffxiv-api.neeeel.com'
+// export const ORDER_API_BASE: string = 'http://localhost:5174'
 
 /** 点餐预置提示词：点击后自动填入输入框并请求 */
 export const PRESET_ORDER_PROMPTS: string[] = [
@@ -50,7 +50,7 @@ export const PROGRESS_DURATION = 15000
 export const TIP_INTERVAL = 3000
 
 /** 生成失败概率（0~1） */
-export const FAILURE_RATE = 0.05
+export const FAILURE_RATE = 0.03
 
 /** 1拉 = 50kcal */
 export const KCAL_PER_LA = 50
