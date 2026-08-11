@@ -77,10 +77,11 @@ function OrderFood() {
     return () => clearInterval(timer)
   }, [state])
 
-  // 点击预置提示词：自动填入并立即请求
+  // 点击预置提示词：自动填入并立即请求；同时切到下一条预置提示词
   const handlePreset = useCallback(
     (preset: string) => {
       setPrompt(preset)
+      setPresetIndex((i) => (i + 1) % PRESET_ORDER_PROMPTS.length)
       void doSearch(preset)
     },
     [doSearch],
@@ -98,11 +99,11 @@ function OrderFood() {
       <div className={`page-transition ${state === 'input' ? 'page-enter' : 'page-exit'}`}>
         {state === 'input' && (
           <div className="order-input-area">
-            <Title level={1} className="app-title order-title">
-              想来点什么?
+            <Title level={1} className="app-title">
+              想吃点什么?
             </Title>
             <Text type="secondary" className="app-subtitle">
-              一句话描述你的口味
+              大家爱吃的易伤暂时缺货
             </Text>
             <Text className="app-quote">
               这独特的气味……是黄金松露吧。<br />
@@ -130,7 +131,7 @@ function OrderFood() {
                 onChange={(e) => setPrompt(e.target.value)}
                 onPressEnter={handleSubmit}
                 maxLength={50}
-                placeholder="例如：想吃辣的"
+                placeholder="一句话描述你的口味，例如：想吃辣的"
                 className="order-input"
                 disabled={searching}
                 allowClear
