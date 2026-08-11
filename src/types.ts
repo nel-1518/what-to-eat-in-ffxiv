@@ -35,3 +35,25 @@ export interface ProgressTipGroup {
   /** 该组包含的多条离谱提示 */
   tips: string[]
 }
+
+/** 点餐语义搜索结果项（来自 /api/recipes/search） */
+export interface OrderResultItem {
+  /** 物品 ID（也是图标文件名：/data/icons/{id}.jpg） */
+  id: number
+  /** 物品名称 */
+  name: string
+  /** 图标 ID（仅展示用；图标文件按 id 命名，勿用此字段拼路径） */
+  icon: number
+  /** 物品描述 */
+  description: string
+  /** 配料列表 */
+  ingredient: string[]
+  /** 余弦相似度（0~1） */
+  score: number
+}
+
+/** 点餐搜索接口响应 */
+export interface OrderSearchResponse {
+  /** 相似度最高的菜品列表 */
+  items: OrderResultItem[]
+}

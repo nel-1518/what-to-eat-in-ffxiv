@@ -7,6 +7,7 @@ import AdModal from './components/AdModal'
 import RecipeResult from './components/RecipeResult'
 import DrinkSpin from './components/DrinkSpin'
 import DrinkResult from './components/DrinkResult'
+import OrderFood from './components/OrderFood'
 import NavBar from './components/NavBar'
 import { generateMealPlan, fetchProgressTips, generateDrinkPlan, fetchAllDrinkNames } from './utils/generateRecipe'
 import { useTheme } from './hooks/useTheme'
@@ -20,7 +21,7 @@ const { Title } = Typography
 type PageState = 'initial' | 'generating' | 'result'
 
 function App() {
-  const [activeTab, setActiveTab] = useState<'eat' | 'drink'>('eat')
+  const [activeTab, setActiveTab] = useState<'order' | 'eat' | 'drink'>('order')
   const [pageState, setPageState] = useState<PageState>('initial')
   const [mealPlan, setMealPlan] = useState<MealPlan | null>(null)
   const [showAd, setShowAd] = useState(false)
@@ -160,6 +161,11 @@ function App() {
     />
 
     <div className="app-container">
+      {/* 点餐页面（AI 语义搜索） */}
+      {activeTab === 'order' && (
+        <OrderFood />
+      )}
+
       {/* 吃什么页面 */}
       {activeTab === 'eat' && (
         <>

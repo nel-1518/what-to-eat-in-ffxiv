@@ -272,7 +272,7 @@
   font-size: 14px;
   color: var(--color-text-secondary);
   margin-top: 24px;
-  max-width: 400px;
+  width: 400px;
   line-height: 1.8;
   font-style: italic;
   font-weight: 450;
@@ -475,6 +475,10 @@
     padding: 70px 12px 20px;
   }
 
+  .app-quote {
+    width: 100%;
+  }
+
   .app-title {
     font-size: 2.6em !important;
     font-weight: 900 !important;
@@ -563,4 +567,157 @@
   padding: 0 8px;
   text-align: center;
   transition: color 0.3s ease;
+}
+
+/* ==================== 点餐页（AI 语义搜索） ==================== */
+
+/* 输入区：标题 + 输入框 + 预置提示词 */
+.order-input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 560px;
+  padding-top: 40px;
+}
+
+.order-title {
+  font-size: 3em !important;
+  margin-bottom: 8px !important;
+}
+
+.order-input-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.order-input .ant-input {
+  font-size: 16px;
+}
+
+/* 圆形提交按钮：Compact 组合内嵌入输入框右侧 */
+.order-submit-btn {
+  flex-shrink: 0;
+  width: 50px !important;
+  height: 40px !important;
+  font-size: 16px !important;
+  background: linear-gradient(
+    135deg,
+    var(--color-accent),
+    var(--color-accent-light)
+  ) !important;
+  color: var(--color-btn-text) !important;
+  box-shadow: var(--shadow-button);
+  transition: all 0.3s ease;
+}
+
+.order-submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* 预置提示词（弱化：一条靠左，右侧换一换） */
+.order-presets {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 60px;
+  padding: 0 10px;
+  width: 100%;
+  min-width: 0;
+}
+
+.order-preset-btn {
+  height: auto !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  color: var(--color-text-muted) !important;
+  transition: all 0.2s ease;
+  /* 覆盖 antd Button 默认 flex 居中，改为左对齐 */
+  display: flex !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  /* 允许自动换行，防止长提示词溢出；占据剩余空间 */
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  flex: 1;
+  min-width: 0;
+}
+
+/* antd Button 内部文字 span：继承左对齐与换行 */
+.order-preset-btn > span {
+  display: block;
+  width: 100%;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.order-preset-btn:hover {
+  color: var(--color-accent) !important;
+  opacity: 1;
+}
+
+/* 换一换：右侧文字按钮，弱化风格 */
+.order-preset-swap {
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+  padding-top: 1px;
+}
+
+.order-preset-swap:hover {
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+/* 加载中 */
+.order-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: 16px;
+}
+
+.order-loading-text {
+  font-size: 18px;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.order-loading-hint {
+  font-size: 13px;
+}
+
+/* 空结果 */
+.order-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+@media (max-width: 600px) {
+  .order-title {
+    font-size: 2.2em !important;
+  }
+
+  .order-submit-btn {
+    width: 36px !important;
+    height: 36px !important;
+  }
 }

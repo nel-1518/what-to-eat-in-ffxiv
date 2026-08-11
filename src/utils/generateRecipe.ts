@@ -1,5 +1,5 @@
-import type { RecipeItem, MealPlan, ProgressTipGroup } from '../types'
-import { MEAL_GROUPS } from '../constants'
+import type { RecipeItem, MealPlan, ProgressTipGroup, OrderSearchResponse } from '../types'
+import { MEAL_GROUPS, ORDER_API_BASE } from '../constants'
 import { assetUrl } from './path'
 
 /** 按标签名加载 JSON 数据 */
@@ -96,4 +96,29 @@ export async function generateDrinkPlan(): Promise<MealPlan> {
     totalCalories: drink?.calories || 0,
     timestamp: Date.now(),
   }
+}
+
+/**
+ * 点餐语义搜索：提示词 → how-much-history 后端嵌入匹配 → Top 5 菜品
+ * @param prompt 提示词（1~50 字）
+ * @returns 相似度最高的菜品列表
+ */
+export async function searchRecipes(prompt: string): Promise<OrderSearchResponse['items']> {
+  const response = await fetch(`${ORDER_API_BASE}/api/recipes/search`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ prompt }),
+  })
+  if (!response.ok) {
+    let detail = ''
+    try {
+      const body = (await response.json()) as { error?: string }
+      detail = body.error ? `：${body.error}` : ''
+    } catch {
+      // 忽略响应体解析失败，仅用状态码
+    }
+    throw new Error(`点餐请求失败 (${response.status})${detail}`)
+  }
+  const data = (await response.json()) as OrderSearchResponse
+  return data.items ?? []
 }
