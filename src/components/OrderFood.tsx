@@ -131,7 +131,7 @@ function OrderFood() {
                 onChange={(e) => setPrompt(e.target.value)}
                 onPressEnter={handleSubmit}
                 maxLength={50}
-                placeholder="一句话描述你的口味，例如：想吃辣的"
+                placeholder="一句话描述你的口味，例如：要辣的"
                 className="order-input"
                 disabled={searching}
                 allowClear
@@ -159,7 +159,7 @@ function OrderFood() {
         {state === 'loading' && (
           <div className="order-loading">
             <Spin size="large" />
-            <Text className="order-loading-text">骑师傅烹饪中...</Text>
+            <Text className="order-loading-text">光速浏览菜单中...</Text>
             <Text type="secondary" className="order-loading-hint">
               {lastPromptRef.current ? `「${lastPromptRef.current}」` : ''}
             </Text>
@@ -178,7 +178,7 @@ function OrderFood() {
         )}
         {state === 'result' && items.length === 0 && (
           <div className="order-empty">
-            <Text type="secondary">没有找到合适的菜品，换个说法试试？</Text>
+            <Text type="secondary">没有找到合适的菜品，换个想法试试？</Text>
             <div style={{ marginTop: 16 }}>
               <Button type="primary" onClick={handleBack}>
                 换个想法
