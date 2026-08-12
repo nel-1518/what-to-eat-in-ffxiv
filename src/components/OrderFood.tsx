@@ -147,7 +147,7 @@ function OrderFood() {
                 loading={searching}
                 className="main-button"
               >
-                点餐
+                帮我挑
               </Button>
             </div>
           </div>
